@@ -11,13 +11,23 @@
       </section>
       <nav class="site-header__nav">
         <div class="site-header__nav-button"><img src="img/menu_button.svg" alt="Меню"></div>
-        <div class="site-header__nav--open">
-            <img class="site-header__nav-button--open" src="img/close.svg" alt="Х">
+        <div class="site-header__nav site-header__nav--open">
+            <div class="site-header__nav-button site-header__nav-button--open">
+            <img src="img/close.svg" alt="Х">
+            </div>
             <ul class="site-header__nav-item-list">
                 <li class="site-header__nav-item"><a href="#">Каталог товаров</a></li>
                 <li class="site-header__nav-item"><a href="#">Вязание на заказ</a></li>
-                <li class="site-header__nav-item"><img class="site-header__menu-item-button" src="img/search.svg" alt="Поиск"><a href="#"> Поиск по сайту</a></li>
-                <li class="site-header__nav-item"><img class="site-header__menu-item-button" src="img/cart.svg" alt="Корзина"><a href="#">Корзина: пока пуста</a></li>
+                <li class="site-header__nav-item">
+                <div class="site-header__menu-item-button" >
+                <img src="img/search.svg" alt="Поиск"><a href="#"> Поиск по сайту</a>
+                </div>
+                </li>
+                <li class="site-header__nav-item">
+                <div class="site-header__menu-item-button" >
+                <img src="img/cart.svg" alt="Корзина"><a href="#">Корзина: пока пуста</a>
+                </div>
+                </li>
             </ul>
         </div>
       </nav>
@@ -25,7 +35,7 @@
   <main class="site-content">
     <div class="wrapper-center">
       <section class="site-content__page-title">
-          <h1>Милые штуки ручной работы для дома</h1>
+          <h1 class="site-content__page-title-text">Милые штуки ручной работы для дома</h1>
       </section>
     </div>
     <div class="wrapper-center">
@@ -40,21 +50,21 @@
     </div>
     <div class="wrapper-center">
       <section class="goods-card">
-          <h2>Вязаные корзинки</h2>
+          <h2 class="goods-card-name">Вязаные корзинки</h2>
           <p class="capitalize">Товар недели</p>
           <p class="goods-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
         <table class="goods-card__parameters">
-            <tr>
-            <td>Цвет:</td>
-            <td>"Тиффани"/серый</td>
+            <tr class="goods-card__parameters-tr">
+            <td class="goods-card__parameters-td">Цвет:</td>
+            <td class="goods-card__parameters-td">"Тиффани"/серый</td>
             </tr>
-            <tr>
-            <td>Диаметр:</td>
-            <td>25 см.</td>
+            <tr class="goods-card__parameters-tr">
+            <td class="goods-card__parameters-td">Диаметр:</td>
+            <td class="goods-card__parameters-td">25 см.</td>
             </tr>
-            <tr>
-            <td>Высота:</td>
-            <td>15 см.</td>
+            <tr class="goods-card__parameters-tr">
+            <td class="goods-card__parameters-td">Высота:</td>
+            <td class="goods-card__parameters-td">15 см.</td>
             </tr>
         </table>
         <figure class="goods-card__img">
@@ -77,19 +87,31 @@
     <div class="site-content__divider"><img src="img/zigzag.svg" alt=""></div>
     <div class="wrapper-center">
     <section class="about-us">
-        <h2>Коротко о нас:</h2>
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__item-list">
-         <li class="about-us__item-img"><img src="img/icon_flower.svg" alt=""></li>
+         <li class="about-us__item-img">
+         <img src="img/icon_flower.svg" alt="">
+         </li>
          <li class="about-us__item">Экологически чистые материалы</li>
-         <li class="about-us__item-img"><img src="img/icon_dollar.svg" alt=""></li>
+         <li class="about-us__item-img">
+         <img src="img/icon_dollar.svg" alt="">
+         </li>
          <li class="about-us__item">Скандинавский стиль по российской цене</li>
-         <li class="about-us__item-img"><img src="img/icon_heart.svg" alt=""></li>
+         <li class="about-us__item-img">
+         <img src="img/icon_heart.svg" alt="">
+         </li>
          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-         <li class="about-us__item-img"><img src="img/icon_tangle.svg" alt=""></li>  
+         <li class="about-us__item-img">
+         <img src="img/icon_tangle.svg" alt="">
+         </li>  
          <li class="about-us__item">Связано вручную с любовью и умилением</li>
-         <li class="about-us__item-img"><img src="img/icon_rocket.svg" alt=""></li>  
+         <li class="about-us__item-img">
+         <img src="img/icon_rocket.svg" alt="">
+         </li>  
          <li class="about-us__item">Поддержка отечественного производителя</li>
-         <li class="about-us__item-img"> <img src="img/icon_gift.svg" alt=""></li>  
+         <li class="about-us__item-img">
+         <img src="img/icon_gift.svg" alt="">
+         </li>  
          <li class="about-us__item">Поставляется в подарочной упаковке</li>
         </ul>
     </section>
@@ -106,13 +128,13 @@
         <nav class="site-content__reviews-nav">
             <button class="site-content__reviews-nav-btn"><img src="img/l_arrow.svg" alt=""></button>
             <button class="site-content__reviews-nav-btn"><img src="img/r_arrow.svg" alt=""></button>
-            <button class="capitalize site-content__reviews-nav-btn--big">Написать</button>
+            <button class="capitalize site-content__reviews-nav-btn capitalize site-content__reviews-nav-btn--big">Написать</button>
         </nav>
     </article>
     </div>
     <div class="site-content__divider"><img src="img/zigzag.svg" alt=""></div>
     <section class="site-content__contacts">
-        <h4>Контакты</h4>
+        <h4 class="site-content__contacts-title">Контакты</h4>
         <ul class="site-content__contacts-list">
             <li class="site-content__contacts-list-item">
             <span>email:</span>
