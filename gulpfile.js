@@ -1,16 +1,16 @@
 "use strict";
 
 var gulp = require("gulp");
-var sass = require("gulp-sass");
+var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
-  gulp.src("sass/style.scss")
+  gulp.src("less/style.less")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(less())
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 2 versions"
@@ -29,6 +29,6 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
