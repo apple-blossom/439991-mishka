@@ -2,30 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
   <header class="site-header">
       <section class="site-logo">
-        <img class="site-header__logo" src="img/logo.svg" width="10" height="10" alt="Мишка">
+        <img class="site-header__logo" src="img/logo.svg" alt="Мишка">
+      </section>
+      <section class="site-header__menu-button">
+            <button class="site-header__button"> 
+                <img src="img/menu_button.svg" alt="Меню">
+            </button>
+            <button class="site-header__button site-header__button--open">
+                <img src="img/close.svg"  alt="Х">
+            </button>
       </section>
       <nav class="site-header__nav">
-        <div class="site-header__nav-button"><img src="img/menu_button.svg" width="10" height="10" alt="Меню"></div>
-        <div class="site-header__nav site-header__nav--open">
-            <div class="site-header__nav-button site-header__nav-button--open">
-              <img src="img/close.svg" width="10" height="10" alt="Х">
-            </div>
             <ul class="site-header__nav-item-list">
                 <li class="site-header__nav-item"><a href="#">Каталог товаров</a></li>
                 <li class="site-header__nav-item"><a href="#">Вязание на заказ</a></li>
                 <li class="site-header__nav-item">
                   <div class="site-header__menu-item-button" >
-                    <img src="img/search.svg" width="10" height="10" alt="Поиск"><a href="#"> Поиск по сайту</a>
+                    <img src="img/search.svg" alt="Поиск"><a href="#"> Поиск по сайту</a>
                   </div>
                 </li>
                 <li class="site-header__nav-item">
                   <div class="site-header__menu-item-button" >
-                    <img src="img/cart.svg" width="10" height="10" alt="Корзина"><a href="#">Корзина: пока пуста</a>
+                    <img src="img/cart.svg" alt="Корзина"><a href="#">Корзина: пока пуста</a>
                   </div>
                 </li>
             </ul>
@@ -40,24 +44,26 @@
     </div>
     <div class="wrapper-center">
       <section class="site-content__categories">
-          <div class="site-content__categories-item">
+        <ul class="site-content__categories-item-list">
+          <li class="site-content__categories-item">
             <a href="#">Предметы интерьера</a>
-            <div class="site-content__menu-item-button">
-              <img src="img/interior.svg" width="10" height="10" alt="Предметы интерьера">
+            <div class="site-content__menu-item-img">
+              <img src="img/interior.svg" alt="Предметы интерьера">
             </div>
-          </div>
-          <div class="site-content__categories-item">
+          </li>
+          <li class="site-content__categories-item">
             <a href="#">Детские игрушки</a>
-            <div class="site-content__menu-item-button">
-              <img class="site-content__menu-item-button" src="img/toy.svg" width="10" height="10" alt="Детские игрушки">
+            <div class="site-content__menu-item-img">
+              <img  src="img/toy.svg"  alt="Детские игрушки">
             </div>
-          </div>
+          </li>
+        </ul>
       </section>
     </div>
     <div class="wrapper-center">
       <section class="goods-card">
-          <h2 class="goods-card-name">Вязаные корзинки</h2>
-          <p class="capitalize">Товар недели</p>
+          <h2 class="goods-card__name">Вязаные корзинки</h2>
+          <p class="capitalize goods-card__notation">Товар недели</p>
           <p class="goods-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
         <table class="goods-card__parameters">
             <tr class="goods-card__parameters-tr">
@@ -74,87 +80,120 @@
             </tr>
         </table>
         <figure class="goods-card__img">
-        <img src="img/triple-set-mobile.png" width="10" height="10" alt="">
+        <img src="img/triple-set-mobile.png" alt="">
         <figcaption class="goods-card__price">Цена: 990 руб.</figcaption>
         </figure>
-        <p class="capitalize goods-card__buy"><a href="#">Заказать</a>
+        <div class="site-button">
+        <p class="site-button__text capitalize"><a href="#">Заказать</a>
+        </p>
+        <div>
       </section>
       <section class="buy-form"><!--модалка -->
         <form method="POST" action="https://echo.htmlacademy.ru/">
               <h1 class="capitalize buy-form__h1">Добавить в корзину</h1>
-              <label class="buy-form__label">Выберите размер:</label>
-              <input class="buy-form__radio" type="radio" name="size" value="s" checked> S
-              <input class="buy-form__radio" type="radio" name="size" value="m"> M
-              <input class="buy-form__radio" type="radio" name="size" value="l"> L
-              <input class="buy-form__radio" type="submit" name="add" value="Добавить">
+              <div class="buy-form__notation-wrapper"><p class="buy-form__notation">Выберите размер:</p>
+              <br>
+              </div>
+                <div class="buy-form__input-wrapper">
+                    <div class="buy-form__radio-wrapper">
+                      <label class="buy-form__label capitalize" for="s">S</label>
+                      <input class="buy-form__radio" type="radio" name="size" id="s" checked> 
+                      <label class="buy-form__label capitalize" for="m">M</label>
+                      <input class="buy-form__radio" type="radio" name="size" id="m"> 
+                      <label class="buy-form__label capitalize" for="l">L</label>
+                      <input class="buy-form__radio" type="radio" name="size" id="l"> 
+                      </div>
+                  <br>
+                  <div class="buy-form__radio-wrapper">
+                  <input class="buy-form__submit capitalize" type="submit" name="add" value="Добавить">
+                  </div>
+                </div>  
           </form>
       </section>
     </div>
-    <div class="site-content__divider"><img src="img/zigzag.svg" width="100" height="10" alt=""></div>
+    <div class="site-content__divider"></div>
     <div class="wrapper-center">
     <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__item-list">
          <li class="about-us__item-img">
-          <img src="img/icon_flower.svg" width="10" height="10" alt="">
+          <img src="img/icon_flower.svg"  alt="">
          </li>
          <li class="about-us__item">Экологически чистые материалы</li>
          <li class="about-us__item-img">
-          <img src="img/icon_dollar.svg" width="10" height="10" alt="">
+          <img src="img/icon_dollar.svg"  alt="">
          </li>
          <li class="about-us__item">Скандинавский стиль по российской цене</li>
          <li class="about-us__item-img">
-          <img src="img/icon_heart.svg" width="10" height="10" alt="">
+          <img src="img/icon_heart.svg"  alt="">
          </li>
          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
          <li class="about-us__item-img">
-          <img src="img/icon_tangle.svg" width="10" height="10" alt="">
+          <img src="img/icon_tangle.svg"  alt="">
          </li>
          <li class="about-us__item">Связано вручную с любовью и умилением</li>
          <li class="about-us__item-img">
-          <img src="img/icon_rocket.svg" width="10" height="10" alt="">
+          <img src="img/icon_rocket.svg" alt="">
          </li>
          <li class="about-us__item">Поддержка отечественного производителя</li>
          <li class="about-us__item-img">
-          <img src="img/icon_gift.svg" width="10" height="10" alt="">
+          <img src="img/icon_gift.svg" alt="">
          </li>
          <li class="about-us__item">Поставляется в подарочной упаковке</li>
         </ul>
     </section>
     </div>
     <div class="wrapper-center">
-    <article class="site-content__reviews">
-        <blockquote class="site-content__reviews-text">
-        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают болше лайков!
+    <article class="site-reviews">
+        <h1 class="site-reviews__title">Отзывы</h1>
+        <blockquote class="site-reviews__text">
+        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!
+        <br>
           <cite>
-            <span class="site-content__reviews-author">Анастасия Красильникова</span>
-            <span class="site-content__reviews-link">@misssssiskras</span>
+            <h4 class="site-reviews__author">Анастасия Красильникова</h4>
+            <p class="site-reviews__link">@misssssiskras</p>
           </cite>
         </blockquote>
-        <nav class="site-content__reviews-nav">
-            <button class="site-content__reviews-nav-btn"><img src="img/l_arrow.svg" width="10" height="10" alt=""></button>
-            <button class="site-content__reviews-nav-btn"><img src="img/r_arrow.svg" width="10" height="10" alt=""></button>
-            <button class="capitalize site-content__reviews-nav-btn capitalize site-content__reviews-nav-btn--big">Написать</button>
+        <nav class="site-reviews__nav">
+            <div class="site-reviews__nav-arrows">
+                <div class="site-reviews__nav-arrow-l">
+                    <a class="site-reviews__nav-btn" href="#">
+                    <img src="img/l_arrow.svg" alt="">
+                    </a>
+                </div>
+                <div class="site-reviews__nav-arrow-r">
+                    <a class="site-reviews__nav-btn" href="#">
+                    <img src="img/r_arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="site-button">
+                <p class="site-button__text capitalize"><a href="#">Написать</a>
+                </p>
+            <div>
         </nav>
     </article>
     </div>
-    <div class="site-content__divider"><img src="img/zigzag.svg" width="10" height="10" alt=""></div>
-    <section class="site-content__contacts">
-        <h3 class="site-content__contacts-title">Контакты</h3>
-        <ul class="site-content__contacts-list">
-            <li class="site-content__contacts-list-item">
+    <div class="site-content__divider"></div>
+    <section class="site-contacts">
+        <h3 class="site-contacts__title">Контакты</h3>
+        <ul class="site-contacts__list">
+            <li class="site-contacts__list-email">
               <span>email:</span>
               <span><a href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru </a></span>
             </li>
-            <li class="site-content__contacts-list-item">
+            <li class="site-contacts__list-address">
               <span>адрес:</span>
               <span>г. Санкт-Петербург, ул. Большая Конюшенная д. 19/8б офис 101</span>
             </li>
         </ul>
         <figure class="site-content__map">
-            <img src="img/map.png" width="10" height="10" alt="">  <!-- заглушка для карты -->
+            <img src="img/map.png" alt="">  <!-- заглушка для карты -->
         </figure>
-        <div class="site-content__contacts-us"><a href="" class="capitalize">Напишите нам</a></div>
+        <div class="site-button">
+                <p class="site-button__text capitalize"><a href="#">Напишите нам</a>
+                </p>
     </section>
   </main>
   <footer class="site-footer">
