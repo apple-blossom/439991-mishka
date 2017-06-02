@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
@@ -37,6 +38,28 @@
       </nav>
   </header>
   <main class="site-content">
+    <section class="buy-form"><!--модалка -->
+        <form method="POST" action="https://echo.htmlacademy.ru/">
+              <h1 class="capitalize buy-form__h1">Добавить в корзину</h1>
+              <div class="buy-form__notation-wrapper"><p class="buy-form__notation">Выберите размер:</p>
+              <br>
+              </div>
+                <div class="buy-form__input-wrapper">
+                    <div class="buy-form__radio-wrapper">
+                      <label class="buy-form__label capitalize" for="s">S</label>
+                      <input class="buy-form__radio" type="radio" name="size" id="s" checked> 
+                      <label class="buy-form__label capitalize" for="m">M</label>
+                      <input class="buy-form__radio" type="radio" name="size" id="m"> 
+                      <label class="buy-form__label capitalize" for="l">L</label>
+                      <input class="buy-form__radio" type="radio" name="size" id="l"> 
+                      </div>
+                  <br>
+                  <div class="buy-form__radio-wrapper">
+                  <input class="buy-form__submit capitalize" type="submit" name="add" value="Добавить">
+                  </div>
+                </div>  
+          </form>
+      </section>
     <div class="wrapper-center">
       <section class="site-content__page-title">
           <h1 class="site-content__page-title-text">Милые штуки ручной работы для дома</h1>
@@ -87,28 +110,6 @@
         <p class="site-button__text capitalize"><a href="#">Заказать</a>
         </p>
         <div>
-      </section>
-      <section class="buy-form"><!--модалка -->
-        <form method="POST" action="https://echo.htmlacademy.ru/">
-              <h1 class="capitalize buy-form__h1">Добавить в корзину</h1>
-              <div class="buy-form__notation-wrapper"><p class="buy-form__notation">Выберите размер:</p>
-              <br>
-              </div>
-                <div class="buy-form__input-wrapper">
-                    <div class="buy-form__radio-wrapper">
-                      <label class="buy-form__label capitalize" for="s">S</label>
-                      <input class="buy-form__radio" type="radio" name="size" id="s" checked> 
-                      <label class="buy-form__label capitalize" for="m">M</label>
-                      <input class="buy-form__radio" type="radio" name="size" id="m"> 
-                      <label class="buy-form__label capitalize" for="l">L</label>
-                      <input class="buy-form__radio" type="radio" name="size" id="l"> 
-                      </div>
-                  <br>
-                  <div class="buy-form__radio-wrapper">
-                  <input class="buy-form__submit capitalize" type="submit" name="add" value="Добавить">
-                  </div>
-                </div>  
-          </form>
       </section>
     </div>
     <div class="site-content__divider"></div>
@@ -176,6 +177,7 @@
     </article>
     </div>
     <div class="site-content__divider"></div>
+    <div class="wrapper-center">
     <section class="site-contacts">
         <h3 class="site-contacts__title">Контакты</h3>
         <ul class="site-contacts__list">
@@ -195,24 +197,30 @@
                 <p class="site-button__text capitalize"><a href="#">Напишите нам</a>
                 </p>
     </section>
+    </div>
   </main>
-  <footer class="site-footer">
-    <section class="social-links">
-        <span class="social-links__element">
-            <a href="#"><img src="img/insta.svg" width="10" height="10" alt="Instagram"></a>
-        </span>
-        <span class="social-links__element">
-            <a href="#"><img src="img/facebook.svg" width="10" height="10" alt="Facebook"></a>
-        </span>
-        <span class="social-links__element">
-            <a href="#"><img src="img/twitter.svg" width="10" height="10" alt="Twitter"></a>
-        </span>
-    </section>
-    <section class="copyrigth">
-        <span class="copyrigth-text">Разработано</span>
-        <span class="copyrigth-text"><a href="#"> <img src="img/HA.svg" width="10" height="10" alt="HTML Academy"> </a></span>
-    </section>
-  </footer>
-
+  <div class="wrapper-responsive">
+    <div class="site-footer__wrapper">
+    <footer class="site-footer">
+      <section class="social-links">
+      <div class="social-links__wrapper">
+          <span class="social-links__element">
+              <a href="#"><img src="img/insta.svg" alt="Instagram"></a>
+          </span>
+          <span class="social-links__element">
+              <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+          </span>
+          <span class="social-links__element">
+              <a href="#"><img src="img/twitter.svg"  alt="Twitter"></a>
+          </span>
+        </div>
+      </section>
+          <section class="site-footer__copyrigth">
+          <span class="site-footer__copyrigth-span"><h3 class="site-footer__copyrigth-text">Разработано</h3></span>
+          <span class="site-footer__copyrigth-span"><a href="#"> <img src="img/HA.svg" alt="HTML Academy"> </a></span>
+      </section>
+      </footer>
+      </div>
+  </div>
   </body>
 </html>
