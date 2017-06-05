@@ -1,0 +1,42 @@
+.mishka {
+    font-family: "Opensans", "Helvetica", "Arial", sans-serif;
+    width: 100%;
+    .clear-indent();
+}
+.mishka__h2, .mishka__h3, .mishka__h4 {
+    .h();
+ }
+
+.mishka__h1 {
+    .h();
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.mishka__button, .mishka__input[type="submit"] {
+    outline: none !important;
+    border: 0 !important;
+
+}
+.mishka__button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.mishka__wrapper-center {
+    margin: auto;
+    width: 320px;
+    display: block;
+}
+
+.mishka__wrapper-responsive {
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    display: block;
+    background-color: @title-bg;
+}
+
+.mishka__capitalize {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

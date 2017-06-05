@@ -1,0 +1,49 @@
+.goods-card {
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    color: @text-color;
+    line-height: 24px;
+}
+
+.goods-card__name {
+    font-size: 25px;
+    .clear-indent();
+}
+
+.goods-card__notation {
+    margin: 0;
+    padding-top: 10px; 
+    .font(@cyan-light);
+}
+
+.goods-card__text {
+    .text();
+}
+
+.goods-card__parameters {
+    width: 100%;
+}
+
+.goods-card__parameters-td {
+    height: 40px;
+    border-bottom: 1px solid #f1f1f1;
+    border-collapse: collapse;
+}
+.goods-card__img {
+    width: 100%;
+    .clear-indent();
+    img {
+        .img();
+        padding-top: @standard-height/3;
+        width: 100%;
+    }
+}
+
+.goods-card__price {
+    .font(@text-color);
+    padding-top: @standard-height/3;
+    text-align: center;
+    font-size: 17px;
+}
+
