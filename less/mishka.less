@@ -9,8 +9,12 @@
 
 .mishka__h1 {
     .h();
-    font-size: 27px;
-    line-height: 30px;
+    @media @mobile {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    font-size: 43px;
+    line-height: 50px;
 }
 
 .mishka__button, .mishka__input[type="submit"] {
@@ -22,21 +26,71 @@
     border: 0 !important;
 }
 
-.mishka__wrapper-center {
-    margin: auto;
-    width: 320px;
-    display: block;
-}
-
-.mishka__wrapper-responsive {
-    margin: auto;
-    width: 100%;
-    min-width: 320px;
-    display: block;
-    background-color: @title-bg;
-}
 
 .mishka__capitalize {
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+@media @mobile {
+
+    .mishka__wrapper-center {
+        margin: auto;
+        width: 320px;
+        display: block;
+    }
+
+    .mishka__wrapper-responsive {
+        margin: auto;
+        width: 100%;
+        min-width: 320px;
+        display: block;
+        background-color: @title-bg;
+    }
+
+    .mishka__wrapper-content {
+        width: 260px;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media @tablet  {
+
+    .mishka__wrapper-center {
+        margin: auto;
+        width: 768px;
+    }
+
+    .mishka__wrapper-responsive {
+        margin: auto;
+        width: 100%;
+        min-width: 768px;
+        background-color: @title-bg;
+    }
+
+    .mishka__wrapper-content {
+        width: 668px;
+        margin: auto;
+    }
+}
+
+@media @desktop {
+
+    .mishka__wrapper-center {
+        margin: auto;
+        width: 1150px;
+    }
+
+    .mishka__wrapper-responsive {
+        margin: auto;
+        width: 100%;
+        min-width: 1150px;
+        background-color: @title-bg;
+    }
+
+    .mishka__wrapper-content {
+        width: 1050px;
+        margin: auto;
+    }
 }
