@@ -10,9 +10,10 @@
 
 <body class="mishka">
     <header class="site-header">
-    <div class="site-logo__additional>"></div>
         <section class="site-logo">
-            <div class="site-header__logo"> </div>
+            <a class="" href="/index.html">
+                <div class="site-header__logo"></div>
+            </a>
         </section>
         <section class="site-header__menu-button">
             <button class="mishka__button site-header__button">
@@ -21,8 +22,8 @@
         <nav class="site-header__nav">
             <ul class="site-header__nav-item-list">
                 <div class="site-header__nav-item-container-bottom">
-                <li class="site-header__nav-item"><a href="#">Каталог товаров</a></li>
-                <li class="site-header__nav-item"><a href="#">Вязание на заказ</a></li>
+                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
                 </div>
                 <div class="site-header__nav-item-container-top">
                     <li class="site-header__nav-item-img">
@@ -33,7 +34,7 @@
                     </li>
                     <li class="site-header__nav-item-img">
                         <div class="site-header__menu-item-button">
-                            <img src="img/cart.svg" alt="Корзина">
+                            <img src="img/icon-cart.svg" alt="Корзина">
                             <a href="#">Корзина: пока пуста</a>
                         </div>
                     </li>
@@ -41,7 +42,7 @@
             </ul>
             <div class="site-header__nav-delivery">
                 <a href="#">Бесплатная доставка по России</a>
-            </<div>
+                </<div>
             </div>
         </nav>
     </header>
@@ -61,13 +62,12 @@
         <div class="">
             <section class="order-page__form-section">
                 <form class="order-page__form">
-                
-                  <div class="order-page__form-row">
-                      <div class="order-page__form-cell">
-                      <fieldset class="order-page__form-frame">
-                        <legend class="mishka__capitalize order-page__form-legend">Тип</legend>
-                        </fieldset>
-                      </div>
+                    <div class="order-page__form-row">
+                        <div class="order-page__form-cell">
+                            <fieldset class="order-page__form-frame">
+                                <legend class="mishka__capitalize order-page__form-legend">Тип</legend>
+                            </fieldset>
+                        </div>
                         <div class="order-page__form-input-wrap">
                             <div class="order-page__form-item">
                                 <input class="mishka__input order-page__form-radio" type="radio" name="type" id="accessory" checked>
@@ -87,167 +87,165 @@
                         </div>
                     </div>
                     <div class="order-page__form-row-wrapper">
-                    <div class="order-page__form-row">
-                    <div class="order-page__form-cell">
-                    <fieldset class="order-page__form-frame">
-                        <legend class="mishka__capitalize order-page__form-legend">Цвет</legend>
-                      </fieldset>
-                    </div>
-                        <div class="order-page__form-input-wrap">
-                        <div class="order-page__form-colors">
-                            <div class="order-page__form-item">
-                                <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="white">
-                                <label class="order-page__form-label" for="white">
-                                    <p class="order-page__form-item-name">Белый
-                                    </p>
-                                </label>
+                        <div class="order-page__form-row">
+                            <div class="order-page__form-cell">
+                                <fieldset class="order-page__form-frame">
+                                    <legend class="mishka__capitalize order-page__form-legend">Цвет</legend>
+                                </fieldset>
                             </div>
-                            <br>
-                            <div class="order-page__form-item">
-                                <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="gray">
-                                <label class="order-page__form-label" for="gray">
-                                    <p class="order-page__form-item-name">Серый
-                                    </p>
-                                </label>
-                            </div>
-                            <br>
-                            <div class="order-page__form-item">
-                                <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="tiffany">
-                                <label class="order-page__form-label" for="tiffany">
-                                    <p class="order-page__form-item-name"> "Тиффани"
-                                    </p>
-                                </label>
-                            </div>
-                            <br>
-                            <div class="order-page__form-item">
-                                <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="black">
-                                <label class="order-page__form-label" for="black">
-                                    <p class="order-page__form-item-name"> Черный
-                                    </p>
-                                </label>
-                            </div>
-                            <br>
-                            <div class="order-page__form-item">
-                                <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="pink">
-                                <label class="order-page__form-label" for="pink">
-                                    <p class="order-page__form-item-name"> Розовый
-                                    </p>
-                                </label>
-                            </div>
-                            <br>
-                            <div class="order-page__form-item">
-                                <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="orange">
-                                <label class="order-page__form-label" for="orange">
-                                    <p class="order-page__form-item-name">Оранжевый
-                                    </p>
-                                </label>
+                            <div class="order-page__form-input-wrap">
+                                <div class="order-page__form-colors">
+                                    <div class="order-page__form-item">
+                                        <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="white">
+                                        <label class="order-page__form-label" for="white">
+                                            <p class="order-page__form-item-name">Белый
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="order-page__form-item">
+                                        <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="gray">
+                                        <label class="order-page__form-label" for="gray">
+                                            <p class="order-page__form-item-name">Серый
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="order-page__form-item">
+                                        <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="tiffany">
+                                        <label class="order-page__form-label" for="tiffany">
+                                            <p class="order-page__form-item-name"> "Тиффани"
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="order-page__form-item">
+                                        <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="black">
+                                        <label class="order-page__form-label" for="black">
+                                            <p class="order-page__form-item-name"> Черный
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="order-page__form-item">
+                                        <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="pink">
+                                        <label class="order-page__form-label" for="pink">
+                                            <p class="order-page__form-item-name"> Розовый
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="order-page__form-item">
+                                        <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="orange">
+                                        <label class="order-page__form-label" for="orange">
+                                            <p class="order-page__form-item-name">Оранжевый
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
                     </div>
-                    </div>
-                    
                     <div class="order-page__form-row">
-                    <div class="order-page__form-cell">
-                    <fieldset class="order-page__form-frame">
-                        <legend class="mishka__capitalize order-page__form-legend">фио</legend>
-                    </fieldset>
-                    </div>
+                        <div class="order-page__form-cell">
+                            <fieldset class="order-page__form-frame">
+                                <legend class="mishka__capitalize order-page__form-legend">фио</legend>
+                            </fieldset>
+                        </div>
                         <div class="order-page__form-input-wrap">
-                          <div class="order-page__form-fields-wrap">
-                            <label class="order-page__form-label" for="name">
-                                <p class="order-page__form-p-text">Имя:
-                                </p>
-                            </label>
-                            <input class="mishka__input order-page__form-text" type="text" id="name" placeholder="Введите ваше имя*" required>
+                            <div class="order-page__form-fields-wrap">
+                                <label class="order-page__form-label" for="name">
+                                    <p class="order-page__form-p-text">Имя:
+                                    </p>
+                                </label>
+                                <input class="mishka__input order-page__form-text" type="text" id="name" placeholder="Введите ваше имя*" required>
                             </div>
                             <div class="order-page__form-fields-wrap">
-                            <label class="order-page__form-label" for="surname">
-                                <p class="order-page__form-p-text">Фамлия:</p>
-                            </label>
-                            <input class="mishka__input order-page__form-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                                <label class="order-page__form-label" for="surname">
+                                    <p class="order-page__form-p-text">Фамлия:</p>
+                                </label>
+                                <input class="mishka__input order-page__form-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
                             </div>
                             <div class="order-page__form-fields-wrap">
-                            <label class="order-page__form-label" for="patronymic">
-                                <p class="order-page__form-p-text">
-                                    Отчество:
-                                </p>
-                            </label>
-                            <input class="mishka__input order-page__form-text" type="text" id="patronymic" placeholder="Отчество, если желаете">
-                        </div>
+                                <label class="order-page__form-label" for="patronymic">
+                                    <p class="order-page__form-p-text">
+                                        Отчество:
+                                    </p>
+                                </label>
+                                <input class="mishka__input order-page__form-text" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                            </div>
                         </div>
                     </div>
                     <div class="order-page__form-row-wrapper">
-                    <div class="order-page__form-row-small">
-                    
-                    <div class="order-page__form-cell">
-                    <fieldset class="order-page__form-frame">
-                        <legend class="mishka__capitalize order-page__form-legend">Тел</legend>
-                    </fieldset>
-                    </div>
-                        <div class="order-page__form-input-wrap">
-                            <input class="mishka__input order-page__form-text" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="\+7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+                        <div class="order-page__form-row-small">
+                            <div class="order-page__form-cell">
+                                <fieldset class="order-page__form-frame">
+                                    <legend class="mishka__capitalize order-page__form-legend">Тел</legend>
+                                </fieldset>
+                            </div>
+                            <div class="order-page__form-input-wrap">
+                                <input class="mishka__input order-page__form-text" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="\+7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="order-page__form-row-small">
-                    <div class="order-page__form-cell">
-                    <fieldset class="order-page__form-frame">
-                        <legend class="mishka__capitalize order-page__form-legend">Email</legend>
-                      </fieldset>
-                    </div>
-                        <div class="order-page__form-input-wrap">
-                            <input class="mishka__input order-page__form-text" type="email" name="email" placeholder="Ваш Email*" pattern="\+7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+                        <div class="order-page__form-row-small">
+                            <div class="order-page__form-cell">
+                                <fieldset class="order-page__form-frame">
+                                    <legend class="mishka__capitalize order-page__form-legend">Email</legend>
+                                </fieldset>
+                            </div>
+                            <div class="order-page__form-input-wrap">
+                                <input class="mishka__input order-page__form-text" type="email" name="email" placeholder="Ваш Email*" pattern="\+7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="order-page__form-row-last">
-                    
-                    <div class="order-page__form-cell">
-                    <fieldset class="order-page__form-frame">
-                        <legend class="mishka__capitalize order-page__form-legend">Доп</legend>
-                    </fieldset>
-                    </div>
+                        <div class="order-page__form-cell">
+                            <fieldset class="order-page__form-frame">
+                                <legend class="mishka__capitalize order-page__form-legend">Доп</legend>
+                            </fieldset>
+                        </div>
                         <div class="order-page__form-input-wrap">
                             <textarea class="order-page__form-textarea" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
                         </div>
-                      </div>
+                    </div>
                     <div class="order-page__form-row-last">
-                    <div class="order-page__form-submit-wrap">
-                        <p class="order-page__form-notation"> *Поля обязательны для заполнения</p>
-                        <div class="order-page__form-submit-frame">
-                            <button class="mishka__button site-button order-page__form-submit" type="submit" name="submit" value="Отправить заказ">
-                                <p class="mishka__capitalize"> Отправить заказ </p>
-                            </button>
+                        <div class="order-page__form-submit-wrap">
+                            <p class="order-page__form-notation"> *Поля обязательны для заполнения</p>
+                            <div class="order-page__form-submit-frame">
+                                <button class="mishka__button site-button order-page__form-submit" type="submit" name="submit" value="Отправить заказ">
+                                    <p class="mishka__capitalize"> Отправить заказ </p>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    
                 </form>
             </section>
         </div>
     </main>
     <div class="mishka__wrapper-responsive">
-        <div class="site-footer__wrapper">
-            <footer class="site-footer">
-                <section class="social-links">
-                    <div class="social-links__wrapper">
-                        <span class="social-links__element">
-              <a href="#"><img src="img/insta.svg" alt="Instagram"></a>
+        <footer class="site-footer">
+            <div class="site-footer__wrapper">
+                <section class="site-footer__logo">
+                </section>
+                <div class="site-footer__social-links">
+                    <div class="site-footer__social-links-wrapper">
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-insta.svg" alt="Instagram"></a>
           </span>
-                        <span class="social-links__element">
-              <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-fb.svg" alt="Facebook"></a>
           </span>
-                        <span class="social-links__element">
-              <a href="#"><img src="img/twitter.svg"  alt="Twitter"></a>
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-twitter.svg"  alt="Twitter"></a>
           </span>
                     </div>
-                </section>
+                </div>
                 <section class="site-footer__copyrigth">
                     <span class="site-footer__copyrigth-span"><h3 class="mishka__h3 site-footer__copyrigth-text">Разработано</h3></span>
-                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="img/HA.svg" alt="HTML Academy"> </a></span>
+                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="./img/logo-htmlacademy.svg" alt="HTML Academy"> </a></span>
                 </section>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
 

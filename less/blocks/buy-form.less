@@ -1,24 +1,35 @@
 .buy-form {
+    width: 570px;
+    margin: auto;
+    //display: flex;
     display: none;
+}
+
+.buy-form__modal {
     position: absolute;
-    top: 125px;
-    left: 0;
-    right: 0;
-    bottom: 0;
     height: 335px;
-    width: 100%;
+    width: 570px;
     border: @border;
     background-color: #fff;
+    z-index: 9999;
+    display: flex;
 }
 
 .buy-form::active {
     display: block;
 }
 
+.buy-form__form {
+    margin: auto;
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+}
+
 .buy-form__notation-wrapper {
     margin: auto;
-    width: 50%;
     height: 50px;
+    display: flex;
 }
 
 .buy-form__notation {
@@ -26,9 +37,14 @@
     color: @text-color;
 }
 
+.buy-form__h2,
+.buy-form__notation-wrapper {
+    text-align: center;
+}
+
 .buy-form__input-wrapper {
     margin: auto;
-    width: 80%;
+    dispaly: flex;
 }
 
 .buy-form__radio {
@@ -38,22 +54,25 @@
 .buy-form__label {
     display: inline-block;
     .font(@text-color);
-    border:  2px solid #d3d2d2;
-    width: 80px;
-    height: auto;
-    text-align: center;
-    padding: 15px 0;
+    border: 2px solid #d3d2d2;
+    width: 100px;
+    height: 50px;
     margin: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .buy-form__label:hover {
-    border:  2px solid @cyan-dark;
+    border: 2px solid @cyan-dark;
 }
 
 .buy-form__radio-wrapper {
     margin: auto;
-    width: 85%;
-    min-width: 260px;
+    min-width: 360px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .buy-form__submit {
@@ -62,4 +81,25 @@
     background-color: @cyan-dark;
     .font(#fff);
     font-size: 17px;
+}
+
+@media @mobile {
+    .buy-form__modal {
+        height: 335px;
+        width: 320px;
+    }
+    .buy-form__h2,
+    .buy-form__notation-wrapper {
+        width: 160px;
+        margin: auto;
+    }
+    .buy-form {
+        width: 320px;
+    }
+    .buy-form__radio-wrapper {
+        min-width: 260px;
+    }
+    .buy-form__label {
+        width: 76px;
+    }
 }

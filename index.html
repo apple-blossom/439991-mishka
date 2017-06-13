@@ -11,7 +11,9 @@
 <body class="mishka">
     <header class="site-header">
         <section class="site-logo">
-            <div class="site-header__logo"> </div>
+            <a class="" href="/index.html">
+                <div class="site-header__logo"></div>
+            </a>
         </section>
         <section class="site-header__menu-button">
             <button class="mishka__button site-header__button">
@@ -20,8 +22,8 @@
         <nav class="site-header__nav">
             <ul class="site-header__nav-item-list">
                 <div class="site-header__nav-item-container-bottom">
-                <li class="site-header__nav-item"><a href="#">Каталог товаров</a></li>
-                <li class="site-header__nav-item"><a href="#">Вязание на заказ</a></li>
+                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
                 </div>
                 <div class="site-header__nav-item-container-top">
                     <li class="site-header__nav-item-img">
@@ -32,7 +34,7 @@
                     </li>
                     <li class="site-header__nav-item-img">
                         <div class="site-header__menu-item-button">
-                            <img src="img/cart.svg" alt="Корзина">
+                            <img src="img/icon-cart.svg" alt="Корзина">
                             <a href="#">Корзина: пока пуста</a>
                         </div>
                     </li>
@@ -40,197 +42,202 @@
             </ul>
             <div class="site-header__nav-delivery">
                 <a href="#">Бесплатная доставка по России</a>
-            </<div>
+                </<div>
             </div>
         </nav>
     </header>
     <main class="site-content">
         <section class="buy-form">
-            <!--модалка -->
-            <form method="POST" action="https://echo.htmlacademy.ru/">
-                <h1 class="mishka__h1 mishka__capitalize buy-form__h1">Добавить в корзину</h1>
-                <div class="buy-form__notation-wrapper">
-                    <p class="buy-form__notation">Выберите размер:</p>
-                    <br>
-                </div>
-                <div class="buy-form__input-wrapper">
-                    <div class="buy-form__radio-wrapper">
-                        <label class="buy-form__label mishka__capitalize" for="s">S</label>
-                        <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
-                        <label class="buy-form__label mishka__capitalize" for="m">M</label>
-                        <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
-                        <label class="buy-form__label mishka__capitalize" for="l">L</label>
-                        <input class="buy-form__radio" type="radio" name="size" id="l">
+            <div class="buy-form__modal">
+                <!--модалка -->
+                <form method="POST" action="https://echo.htmlacademy.ru/" class="buy-form__form">
+                    <h2 class="mishka__h2 mishka__capitalize buy-form__h2">Добавить в корзину</h2>
+                    <div class="buy-form__notation-wrapper">
+                        <p class="buy-form__notation">Выберите размер:</p>
+                        <br>
                     </div>
-                    <br>
-                    <div class="buy-form__radio-wrapper">
-                        <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                    <div class="buy-form__input-wrapper">
+                        <div class="buy-form__radio-wrapper">
+                            <label class="buy-form__label mishka__capitalize" for="s">S</label>
+                            <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
+                            <label class="buy-form__label mishka__capitalize" for="m">M</label>
+                            <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
+                            <label class="buy-form__label mishka__capitalize" for="l">L</label>
+                            <input class="buy-form__radio" type="radio" name="size" id="l">
+                        </div>
+                        <br>
+                        <div class="buy-form__radio-wrapper">
+                            <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
-        <div class="mishka__wrapper-center">
-            <section class="site-content__page-title">
-                <h1 class="mishka__h1 site-content__page-title-text">Милые штуки ручной работы для дома</h1>
+        <section class="site-content__page-title">
+            <div class="mishka__wrapper-center">
+                <section class="site-content__page-title">
+                    <h1 class="mishka__h1 site-content__page-title-text">Милые штуки ручной работы для дома</h1>
+            </div>
             </section>
-        </div>
-        <div class="mishka__wrapper-center">
             <section class="site-content__categories">
                 <ul class="site-content__categories-item-list">
                     <li class="site-content__categories-item">
                         <a href="#">Предметы интерьера</a>
                         <div class="site-content__menu-item-img">
-                            <img src="img/interior.svg" alt="Предметы интерьера">
+                            <img src="img/icon-interior.svg" alt="Предметы интерьера">
                         </div>
                     </li>
                     <li class="site-content__categories-item">
                         <a href="#">Детские игрушки</a>
                         <div class="site-content__menu-item-img">
-                            <img src="img/toy.svg" alt="Детские игрушки">
+                            <img src="img/icon-toy.svg" alt="Детские игрушки">
                         </div>
                     </li>
                 </ul>
             </section>
-        </div>
-        <div class="mishka__wrapper-center">
             <section class="goods-card">
-                <h2 class="mishka__h2 goods-card__name">Вязаные корзинки</h2>
-                <p class="mishka__capitalize goods-card__notation">Товар недели</p>
-                <p class="goods-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
-                <table class="goods-card__parameters">
-                    <tr class="goods-card__parameters-tr">
-                        <td class="goods-card__parameters-td">Цвет:</td>
-                        <td class="goods-card__parameters-td">"Тиффани"/серый</td>
-                    </tr>
-                    <tr class="goods-card__parameters-tr">
-                        <td class="goods-card__parameters-td">Диаметр:</td>
-                        <td class="goods-card__parameters-td">25 см.</td>
-                    </tr>
-                    <tr class="goods-card__parameters-tr">
-                        <td class="goods-card__parameters-td">Высота:</td>
-                        <td class="goods-card__parameters-td">15 см.</td>
-                    </tr>
-                </table>
-                <figure class="goods-card__img">
-                    <img src="img/triple-set-mobile.png" alt="">
-                    <figcaption class="goods-card__price">Цена: 990 руб.</figcaption>
-                </figure>
-                <div class="site-button">
-                    <p class="site-button__text mishka__capitalize"><a href="#">Заказать</a>
-                    </p>
-                    <div>
+                <div class="goods-card__wrapper">
+                    <div class="goods-card__head">
+                        <h1 class="mishka__h1 goods-card__name">Вязаные корзинки</h1>
+                        <p class="mishka__capitalize goods-card__notation">Товар недели</p>
+                    </div>
+                    <div class="goods-card__left">
+                        <div class="goods-card__img">
+                        </div>
+                        <p class="goods-card__text">
+                            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
+                        </p>
+                        <table class="goods-card__parameters">
+                            <tr class="goods-card__parameters-tr">
+                                <td class="goods-card__parameters-td">Цвет:</td>
+                                <td class="goods-card__parameters-td">"Тиффани"/серый</td>
+                            </tr>
+                            <tr class="goods-card__parameters-tr">
+                                <td class="goods-card__parameters-td">Диаметр:</td>
+                                <td class="goods-card__parameters-td">25 см.</td>
+                            </tr>
+                            <tr class="goods-card__parameters-tr">
+                                <td class="goods-card__parameters-td">Высота:</td>
+                                <td class="goods-card__parameters-td">15 см.</td>
+                            </tr>
+                        </table>
+                        <div class="goods-card__price">Цена: 990 руб.</div>
+                        <div class="goods-card__button">
+                            <p class="site-button__text mishka__capitalize"><a href="#">Заказать</a>
+                            </p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
             </section>
-            </div>
             <div class="site-content__divider"></div>
-            <div class="mishka__wrapper-center">
-                <section class="about-us">
-                    <h2 class="mishka__h2 about-us__title">Коротко о нас:</h2>
-                    <ul class="about-us__item-list">
-                        <li class="about-us__item-img">
-                            <img src="img/icon_flower.svg" alt="">
-                        </li>
-                        <li class="about-us__item">Экологически чистые материалы</li>
-                        <li class="about-us__item-img">
-                            <img src="img/icon_dollar.svg" alt="">
-                        </li>
-                        <li class="about-us__item">Скандинавский стиль по российской цене</li>
-                        <li class="about-us__item-img">
-                            <img src="img/icon_heart.svg" alt="">
-                        </li>
-                        <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-                        <li class="about-us__item-img">
-                            <img src="img/icon_tangle.svg" alt="">
-                        </li>
-                        <li class="about-us__item">Связано вручную с любовью и умилением</li>
-                        <li class="about-us__item-img">
-                            <img src="img/icon_rocket.svg" alt="">
-                        </li>
-                        <li class="about-us__item">Поддержка отечественного производителя</li>
-                        <li class="about-us__item-img">
-                            <img src="img/icon_gift.svg" alt="">
-                        </li>
-                        <li class="about-us__item">Поставляется в подарочной упаковке</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="mishka__wrapper-center">
+            <section class="about-us">
+                <h1 class="mishka__h1 about-us__title">Коротко о нас:</h1>
+                <ul class="about-us__item-list">
+                    <li class="about-us__item-img">
+                        <img src="img/icon-feature-1.svg" alt="">
+                    </li>
+                    <li class="about-us__item">Экологически чистые материалы</li>
+                    <li class="about-us__item-img">
+                        <img src="img/icon-feature-2.svg" alt="">
+                    </li>
+                    <li class="about-us__item">Скандинавский стиль по российской цене</li>
+                    <li class="about-us__item-img">
+                        <img src="img/icon-feature-3.svg" alt="">
+                    </li>
+                    <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+                    <li class="about-us__item-img">
+                        <img src="img/icon-feature-4.svg" alt="">
+                    </li>
+                    <li class="about-us__item">Связано вручную с любовью и умилением</li>
+                    <li class="about-us__item-img">
+                        <img src="img/icon-feature-5.svg" alt="">
+                    </li>
+                    <li class="about-us__item">Поддержка отечественного производителя</li>
+                    <li class="about-us__item-img">
+                        <img src="img/icon-feature-6.svg" alt="">
+                    </li>
+                    <li class="about-us__item">Поставляется в подарочной упаковке</li>
+                </ul>
+            </section>
+            <div class="site-reviews__wrapper">
                 <article class="site-reviews">
                     <h1 class="mishka__h1 site-reviews__title">Отзывы</h1>
+                    <div class="site-reviews__button">
+                        <p class="site-button__text mishka__capitalize"><a href="#">Написать</a>
+                        </p>
+                    </div>
                     <blockquote class="site-reviews__text">
                         Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!
                         <br>
-                        <cite>
-                            <h4 class="mishka__h4 site-reviews__author">Анастасия Красильникова</h4>
+                        <cite class="site-reviews__author">
+                            <h4 class="mishka__h4 site-reviews__author-name">Анастасия Красильникова</h4>
                             <p class="site-reviews__link">@misssssiskras</p>
                         </cite>
-                    </blockquote>
-                    <nav class="site-reviews__nav">
-                        <div class="site-reviews__nav-arrows">
+                        <nav class="site-reviews__nav">
                             <div class="site-reviews__nav-arrow-l">
                                 <a class="site-reviews__nav-btn" href="#">
-                                    <img src="img/l_arrow.svg" alt="">
                                 </a>
                             </div>
                             <div class="site-reviews__nav-arrow-r">
                                 <a class="site-reviews__nav-btn" href="#">
-                                    <img src="img/r_arrow.svg" alt="">
                                 </a>
                             </div>
-                        </div>
-                        <br>
-                        <div class="site-button">
-                            <p class="site-button__text mishka__capitalize"><a href="#">Написать</a>
-                            </p>
-                            <div>
-                    </nav>
+                        </nav>
+                    </blockquote>
                 </article>
-                </div>
-                <div class="site-content__divider"></div>
-                <div class="mishka__wrapper-center">
-                    <section class="site-contacts">
-                        <h3 class="mishka__h3 site-contacts__title">Контакты</h3>
-                        <ul class="site-contacts__list">
-                            <li class="site-contacts__list-email">
-                                <span>email:</span>
-                                <span><a href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru </a></span>
-                            </li>
-                            <li class="site-contacts__list-address">
-                                <span>адрес:</span>
-                                <span>г. Санкт-Петербург, ул. Большая Конюшенная д. 19/8б офис 101</span>
-                            </li>
-                        </ul>
-                        <figure class="site-content__map">
-                            <img src="img/map.png" alt="">
-                            <!-- заглушка для карты -->
-                        </figure>
-                        <div class="site-button">
-                            <p class="site-button__text mishka__capitalize"><a href="#">Напишите нам</a>
-                            </p>
-                    </section>
+            </div>
+            <div class="site-content__divider"></div>
+            <section class="site-contacts">
+                <div class="site-contacts__left">
+                    <div class="site-contacts__title">
+                        <h1 class="mishka__h1 site-contacts__title-h1">Контакты</h1>
+                        <div class="site-contacts__title-img"></div>
                     </div>
+                    <ul class="site-contacts__list">
+                        <li class="site-contacts__list-item">
+                            <span class="site-contacts__name">e-mail:</span>
+                            <span class="site-contacts__content"><a class="mishka__email" href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru </a></span>
+                        </li>
+                        <li class="site-contacts__list-item">
+                            <span class="site-contacts__name">адрес:</span>
+                            <span class="site-contacts__content">г. Санкт-Петербург, ул. Большая Конюшенная д. 19/8б офис 101</span>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="site-contacts__map">
+                    <!-- заглушка для карты -->
+                </figure>
+                <div class="site-contacts__button">
+                    <p class="site-button__text mishka__capitalize"><a href="#">Напишите нам</a>
+                    </p>
+                </div>
+            </section>
     </main>
     <div class="mishka__wrapper-responsive">
-        <div class="site-footer__wrapper">
-            <footer class="site-footer">
-                <section class="social-links">
-                    <div class="social-links__wrapper">
-                        <span class="social-links__element">
-              <a href="#"><img src="img/insta.svg" alt="Instagram"></a>
+        <footer class="site-footer">
+            <div class="site-footer__wrapper">
+                <section class="site-footer__logo">
+                </section>
+                <div class="site-footer__social-links">
+                    <div class="site-footer__social-links-wrapper">
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-insta.svg" alt="Instagram"></a>
           </span>
-                        <span class="social-links__element">
-              <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-fb.svg" alt="Facebook"></a>
           </span>
-                        <span class="social-links__element">
-              <a href="#"><img src="img/twitter.svg"  alt="Twitter"></a>
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-twitter.svg"  alt="Twitter"></a>
           </span>
                     </div>
-                </section>
+                </div>
                 <section class="site-footer__copyrigth">
                     <span class="site-footer__copyrigth-span"><h3 class="mishka__h3 site-footer__copyrigth-text">Разработано</h3></span>
-                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="img/HA.svg" alt="HTML Academy"> </a></span>
+                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="./img/logo-htmlacademy.svg" alt="HTML Academy"> </a></span>
                 </section>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
 

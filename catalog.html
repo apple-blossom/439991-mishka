@@ -11,7 +11,9 @@
 <body class="mishka">
     <header class="site-header">
         <section class="site-logo">
-            <div class="site-header__logo"> </div>
+            <a class="" href="/index.html">
+                <div class="site-header__logo"></div>
+            </a>
         </section>
         <section class="site-header__menu-button">
             <button class="mishka__button site-header__button">
@@ -20,8 +22,8 @@
         <nav class="site-header__nav">
             <ul class="site-header__nav-item-list">
                 <div class="site-header__nav-item-container-bottom">
-                <li class="site-header__nav-item"><a href="#">Каталог товаров</a></li>
-                <li class="site-header__nav-item"><a href="#">Вязание на заказ</a></li>
+                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
                 </div>
                 <div class="site-header__nav-item-container-top">
                     <li class="site-header__nav-item-img">
@@ -32,7 +34,7 @@
                     </li>
                     <li class="site-header__nav-item-img">
                         <div class="site-header__menu-item-button">
-                            <img src="img/cart.svg" alt="Корзина">
+                            <img src="img/icon-cart.svg" alt="Корзина">
                             <a href="#">Корзина: пока пуста</a>
                         </div>
                     </li>
@@ -40,115 +42,132 @@
             </ul>
             <div class="site-header__nav-delivery">
                 <a href="#">Бесплатная доставка по России</a>
-            </<div>
+                </<div>
             </div>
         </nav>
     </header>
     <main class="catalog-page">
         <section class="buy-form">
-            <!--модалка -->
-            <form method="POST" action="https://echo.htmlacademy.ru/">
-                <h1 class="mishka__h1 mishka__capitalize buy-form__h1">Добавить в корзину</h1>
-                <div class="buy-form__notation-wrapper">
-                    <p class="buy-form__notation">Выберите размер:</p>
-                    <br>
-                </div>
-                <div class="buy-form__input-wrapper">
-                    <div class="buy-form__radio-wrapper">
-                        <label class="buy-form__label mishka__capitalize" for="s">S</label>
-                        <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
-                        <label class="buy-form__label mishka__capitalize" for="m">M</label>
-                        <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
-                        <label class="buy-form__label mishka__capitalize" for="l">L</label>
-                        <input class="mishka__input buy-form__radio" type="radio" name="size" id="l">
+            <div class="buy-form__modal">
+                <!--модалка -->
+                <form method="POST" action="https://echo.htmlacademy.ru/" class="buy-form__form">
+                    <h2 class="mishka__h2 mishka__capitalize buy-form__h2">Добавить в корзину</h2>
+                    <div class="buy-form__notation-wrapper">
+                        <p class="buy-form__notation">Выберите размер:</p>
+                        <br>
                     </div>
-                    <br>
-                    <div class="buy-form__radio-wrapper">
-                        <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                    <div class="buy-form__input-wrapper">
+                        <div class="buy-form__radio-wrapper">
+                            <label class="buy-form__label mishka__capitalize" for="s">S</label>
+                            <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
+                            <label class="buy-form__label mishka__capitalize" for="m">M</label>
+                            <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
+                            <label class="buy-form__label mishka__capitalize" for="l">L</label>
+                            <input class="buy-form__radio" type="radio" name="size" id="l">
+                        </div>
+                        <br>
+                        <div class="buy-form__radio-wrapper">
+                            <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
         <div class="mishka__wrapper-responsive">
             <section class="page-title">
                 <h1 class="mishka__h1 page-title__text">Каталог товаров</h1>
             </section>
         </div>
-        <div class="mishka__wrapper-center">
+        <section class="catalog-good__wrapper">
             <section class="catalog-good">
                 <div class="catalog-good__img">
-                    <img src="img/good-1.png" alt="Good 1">
+                    <img src="./img/photo-1-tablet.jpg">
                 </div>
                 <div class="catalog-good__info">
-                    <h2 class="mishka__h2 catalog-good__name">Зайчик-попрыгайчик</h2>
-                    <p class="catalog-good__descr">Рост 30 см, вес 200 г</p>
+                    <div class="catalog-good__info-title">
+                        <h2 class="mishka__h2 catalog-good__name">Зайчик-попрыгайчик</h2>
+                        <p class="catalog-good__descr">Рост 30 см, вес 200 г</p>
+                    </div>
                     <div class="catalog-good__buy">
                         <span class="catalog-good__buy-price">1 200 руб.</span>
-                        <span class="catalog-good__buy-cart"><img src="img/cart.svg" alt="Корзина"></span>
+                        <span class="catalog-good__buy-cart"><img src="img/icon-cart.svg" alt="Корзина"></span>
                     </div>
                 </div>
             </section>
             <section class="catalog-good">
-                <div class="catalog-good__img"><img src="img/good-2.png" alt="Good 2"></div>
+                <div class="catalog-good__img">
+                    <img src="./img/photo-2-tablet.jpg">
+                </div>
                 <div class="catalog-good__info">
-                    <h2 class="mishka__h2 catalog-good__name">Корзинка для белья</h2>
-                    <p class="catalog-good__descr"> Диаметр 15 см, высота 10 см </p>
+                    <div class="catalog-good__info-title">
+                        <h2 class="mishka__h2 catalog-good__name">Корзинка для белья</h2>
+                        <p class="catalog-good__descr"> Диаметр 15 см, высота 10 см </p>
+                    </div>
                     <div class="catalog-good__buy">
                         <span class="catalog-good__buy-price"> 690 руб.</span>
-                        <span class="catalog-good__buy-cart"><img src="img/cart.svg"   alt="Корзина"></span>
+                        <span class="catalog-good__buy-cart"><img src="img/icon-cart.svg" alt="Корзина"></span>
                     </div>
                 </div>
             </section>
             <section class="catalog-good">
-                <div class="catalog-good__img"><img src="img/good-3.png" alt="Good 3"></div>
+                <div class="catalog-good__img">
+                    <img src="./img/photo-3-tablet.jpg">
+                </div>
                 <div class="catalog-good__info">
-                    <h2 class="mishka__h2 catalog-good__name"> Большая корзинка для игрушек </h2>
-                    <p class="catalog-good__descr"> Диаметр 30 см, высота 30 см </p>
+                    <div class="catalog-good__info-title">
+                        <h2 class="mishka__h2 catalog-good__name"> Большая корзинка для игрушек </h2>
+                        <p class="catalog-good__descr"> Диаметр 30 см, высота 30 см </p>
+                    </div>
                     <div class="catalog-good__buy">
                         <span class="catalog-good__buy-price"> 1 500 руб.</span>
-                        <span class="catalog-good__buy-cart"> <img src="img/cart.svg"   alt="Корзина"></span>
+                        <span class="catalog-good__buy-cart"> <img src="img/icon-cart.svg"   alt="Корзина"></span>
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
         <div class="mishka__wrapper-center">
             <section class="catalog-page__video-card">
+                <div class="catalog-page__video">
+                    <div class="catalog-page__video-play">
+                        <img src="./img/icon-play.svg">
+                    </div>
+                </div>
                 <div class="catalog-page__video-title">
                     <span class="catalog-page__video-icon"> <img src="img/video.svg"   alt=""></span>
                     <span class="catalog-page__video-name"> <h4 class="catalog-page__video-h">Процесс производства </h4></span>
                 </div>
-                <video class="catalog-page__video" poster="img/poster.png">
-                </video>
                 <p class="catalog-page__video-text"> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-                <div class="site-button">
-                    <p class="site-button__text mishka__capitalize"><a href="#"> Сделать заказ</a>
+                <div class="catalog-button">
+                    <p class="catalog-button__text mishka__capitalize"><a href="#"> Сделать заказ</a>
                     </p>
                     <div>
             </section>
             </div>
     </main>
     <div class="mishka__wrapper-responsive">
-        <div class="site-footer__wrapper">
-            <footer class="site-footer">
-                <section class="social-links">
-                    <div class="social-links__wrapper">
-                        <span class="social-links__element">
-              <a href="#"><img src="img/insta.svg" alt="Instagram"></a>
+        <footer class="site-footer">
+            <div class="site-footer__wrapper">
+                <section class="site-footer__logo">
+                </section>
+                <div class="site-footer__social-links">
+                    <div class="site-footer__social-links-wrapper">
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-insta.svg" alt="Instagram"></a>
           </span>
-                        <span class="social-links__element">
-              <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-fb.svg" alt="Facebook"></a>
           </span>
-                        <span class="social-links__element">
-              <a href="#"><img src="img/twitter.svg"  alt="Twitter"></a>
+                        <span class="site-footer__social-links-element">
+              <a href="#"><img src="./img/icon-twitter.svg"  alt="Twitter"></a>
           </span>
                     </div>
-                </section>
+                </div>
                 <section class="site-footer__copyrigth">
                     <span class="site-footer__copyrigth-span"><h3 class="mishka__h3 site-footer__copyrigth-text">Разработано</h3></span>
-                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="img/HA.svg" alt="HTML Academy"> </a></span>
+                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="./img/logo-htmlacademy.svg" alt="HTML Academy"> </a></span>
                 </section>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
 

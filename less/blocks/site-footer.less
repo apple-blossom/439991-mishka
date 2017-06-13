@@ -1,37 +1,128 @@
 .site-footer {
     width: 100%;
-    height: 160px;
+    height: 140px;
     margin: auto;
+    display: flex;
 }
 
 .site-footer__wrapper {
-    width: 320px;
     margin: auto;
+    justify-content: space-between;
 }
 
-
+.site-footer__social-links {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
 
 .site-footer__copyrigth {
-    padding: 0 20px;
-    height: 60px;
-    width: 80%;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.site-footer__copyrigth-span {
-
+.site-footer__social-links-wrapper {
     width: 60%;
-    height: 40px;
-    img{
-        .img(35px);
-        float: right;
-        padding-right: 20px;
-    }
-
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.site-footer__copyrigth-text {
-    width:  135px;
-    margin: 0;
-    float: left;
+.site-footer__social-links-element {
+    a {
+        .a();
+    }
+    img {
+        .img-inline(30px;
+        30px);
+        margin: 0 5px;
+    }
+}
+
+@media @mobile {
+    .site-footer {
+        height: 160px;
+    }
+    .site-footer__wrapper {
+        width: 320px;
+        margin: auto;
+    }
+    .site-footer__logo {
+        display: none;
+    }
+    .site-footer__copyrigth {
+        padding: 0 20px;
+        height: 60px;
+        width: 80%;
+        margin: auto;
+    }
+    .site-footer__copyrigth-span {
+        width: 60%;
+        height: 40px;
+        img {
+            .img(35px);
+            float: right;
+            padding-right: 20px;
+        }
+    }
+    .site-footer__copyrigth-text {
+        width: 135px;
+        margin: 0;
+        float: left;
+    }
+    .site-footer__social-links {
+        width: 80%;
+        padding-top: 20px;
+        margin: auto;
+        height: 60px;
+    }
+}
+
+@media @desktop {
+    .site-footer__wrapper {
+        width: 1050px;
+    }
+}
+
+@media @tablet {
+    .site-footer__wrapper {
+        width: 668px;
+    }
+}
+
+@media @desktop,
+@tablet {
+    .site-footer__wrapper {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        height: 80px;
+    }
+    .site-footer__copyrigth {
+        height: 60px;
+        width: 200px;
+        margin: auto;
+    }
+    .site-footer__copyrigth-span {
+        width: 40px;
+        height: 40px;
+        img {
+            .img(35px);
+            padding-right: 20px;
+        }
+    }
+    .site-footer__copyrigth-text {
+        margin: 0;
+    }
+    .site-footer__social-links {
+        width: 160px;
+        height: 60px;
+    }
+    .site-footer__logo {
+        height: 60px;
+        width: 200px;
+        background: url("../img/logo-mobile.svg") no-repeat 50%;
+        margin: auto;
+    }
 }
