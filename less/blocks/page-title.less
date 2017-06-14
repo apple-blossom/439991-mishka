@@ -2,11 +2,19 @@
     display: block;
     height: 200px;
     background-color: @title-bg;
-
+    margin-bottom: 80px;
     h1 {
-        padding: 75px 10px;
+        padding: 95px 10px;
         .h(center);
         margin: 0;
+    }
+}
 
+@media @mobile {
+    .page-title {
+        margin: auto;
+        h1 {
+            padding: 75px 10px;
+        }
     }
 }

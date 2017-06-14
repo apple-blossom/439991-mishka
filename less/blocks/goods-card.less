@@ -1,48 +1,201 @@
-.goods-card {
-    display: block;
-    width: 80%;
-    margin: 30px auto;
-    color: @text-color;
-    line-height: 24px;
-}
-
-.goods-card__name {
-    font-size: 25px;
-    .clear-indent();
-}
-
-.goods-card__notation {
-    margin: 0;
-    padding-top: 10px;
-    .font(@cyan-light);
-}
-
 .goods-card__text {
     .text();
 }
 
-.goods-card__parameters {
-    width: 100%;
-}
-
-.goods-card__parameters-td {
-    height: 40px;
-    border-bottom: 1px solid #f1f1f1;
-    border-collapse: collapse;
-}
-.goods-card__img {
-    width: 100%;
-    .clear-indent();
-    img {
-        .img();
-        padding-top: @standard-height/3;
-        width: 100%;
-    }
+.goods-card__button {
+    height: 50px;
+    border: 2px solid @text-color;
 }
 
 .goods-card__price {
     .font(@text-color);
-    padding-top: @standard-height/3;
-    text-align: center;
-    font-size: 17px;
+}
+
+.goods-card__wrapper {
+    margin: auto;
+}
+
+@media @mobile {
+    .goods-card {
+        display: block;
+        margin: 30px auto;
+        color: @text-color;
+        line-height: 24px;
+    }
+    .goods-card__name {
+        font-size: 25px;
+        .clear-indent();
+    }
+    .goods-card__notation {
+        margin: 0;
+        padding-top: 10px;
+        .font(@cyan-light);
+    }
+    .goods-card__left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .goods-card__parameters {
+        width: 100%;
+    }
+    .goods-card__parameters-td {
+        height: 40px;
+        border-bottom: 1px solid #f1f1f1;
+        border-collapse: collapse;
+    }
+    .goods-card__img {
+        width: 260px;
+        height: 320px;
+        .clear-indent();
+        order: 1;
+        background: url("../img/triple-set-mobile@1x.jpg") no-repeat 50%;
+        background-size: cover;
+    }
+    .goods-card__price {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 17px;
+        order: 2;
+    }
+    .goods-card__button {
+        order: 3;
+        width: 260px;
+        margin: 30px auto;
+    }
+    .goods-card__wrapper {
+        width: 260px;
+    }
+}
+
+@media @tablet {
+    .goods-card {
+        display: flex;
+        margin: 30px auto;
+        color: @text-color;
+        line-height: 24px;
+        flex-direction: column;
+    }
+    .goods-card__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    .goods-card__name {
+        color: #000;
+        .clear-indent();
+    }
+    .goods-card__notation {
+        margin: 0 20px;
+        .font(@cyan-light);
+        width: 80px;
+        text-align: center;
+    }
+    .goods-card__left {
+        margin: 40px auto;
+        height: 400px;
+    }
+    .goods-card__parameters {
+        width: 300px;
+    }
+    .goods-card__text {
+        width: 300px;
+        display: inline-block;
+        .clear-indent();
+        padding-bottom: 35px;
+    }
+    .goods-card__parameters-td {
+        height: 40px;
+        border-bottom: 1px solid #f1f1f1;
+        border-collapse: collapse;
+    }
+    .goods-card__img {
+        width: 300px;
+        height: 400px;
+        .clear-indent();
+        float: right;
+        display: inline-block;
+        background: url("../img/triple-set-mobile@1x.jpg") no-repeat 50%;
+        background-size: cover;
+    }
+    .goods-card__price {
+        padding-top: 60px;
+        text-align: center;
+        font-size: 17px;
+        width: 300px;
+        display: inline-block;
+    }
+    .goods-card__button {
+        width: 290px;
+        display: inline-block;
+        margin-top: 18px;
+    }
+    .goods-card__wrapper {
+        width: 668px;
+    }
+}
+
+@media @desktop {
+    .goods-card {
+        display: flex;
+        margin: 30px auto;
+        color: @text-color;
+        line-height: 24px;
+        flex-direction: column;
+    }
+    .goods-card__head {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 620px;
+        margin: 40px 0;
+    }
+    .goods-card__name {
+        color: #000;
+        .clear-indent();
+    }
+    .goods-card__notation {
+        margin: 0 20px;
+        .font(@cyan-light);
+        width: 80px;
+        text-align: center;
+    }
+    .goods-card__left {
+        margin-left: 200px;
+        height: 400px;
+        width: 400px;
+    }
+    .goods-card__parameters {
+        width: 300px;
+    }
+    .goods-card__text {
+        width: 300px;
+        display: inline-block;
+        .clear-indent();
+        padding-bottom: 35px;
+    }
+    .goods-card__parameters-td {
+        height: 40px;
+        border-bottom: 1px solid #f1f1f1;
+        border-collapse: collapse;
+    }
+    .goods-card__img {
+        display: none;
+    }
+    .goods-card__price {
+        padding-top: 60px;
+        text-align: center;
+        font-size: 17px;
+        width: 300px;
+        display: block;
+    }
+    .goods-card__button {
+        width: 290px;
+        display: sblock;
+        margin-top: 18px;
+    }
+    .goods-card__wrapper {
+        width: 1050px;
+        background: url("../img/triple-set-desktop.jpg") no-repeat 100%;
+        background-size: 520px 630px;
+    }
 }
