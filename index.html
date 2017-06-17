@@ -10,67 +10,70 @@
 
 <body class="mishka">
     <header class="site-header">
-        <section class="site-logo">
-            <a class="" href="/index.html">
-                <div class="site-header__logo"></div>
-            </a>
-        </section>
-        <section class="site-header__menu-button">
-            <button class="mishka__button site-header__button">
-            </button>
-        </section>
         <nav class="site-header__nav">
-            <ul class="site-header__nav-item-list">
-                <div class="site-header__nav-item-container-bottom">
-                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
-                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
-                </div>
-                <div class="site-header__nav-item-container-top">
-                    <li class="site-header__nav-item-img">
-                        <div class="site-header__menu-item-button">
-                            <img src="img/search.svg" alt="Поиск">
-                            <a href="#"> Поиск по сайту</a>
-                        </div>
-                    </li>
-                    <li class="site-header__nav-item-img">
-                        <div class="site-header__menu-item-button">
-                            <img src="img/icon-cart.svg" alt="Корзина">
-                            <a href="#">Корзина: пока пуста</a>
-                        </div>
-                    </li>
-                </div>
+            <section class="site-header__menu-button">
+                <button class="mishka__button site-header__button">
+                </button>
+            </section>
+            <section class="site-logo">
+                <a class="" href="/index.html">
+                    <div class="site-header__logo"></div>
+                </a>
+            </section>
+            <ul class="site-header__nav-item-container-bottom">
+                <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="site-header__nav-item-container-top">
+                <li class="site-header__nav-item-img">
+                    <div class="site-header__menu-item-button">
+                        <img src="img/search.svg" alt="Поиск">
+                        <a href="#"> Поиск по сайту</a>
+                    </div>
+                </li>
+                <li class="site-header__nav-item-img">
+                    <div class="site-header__menu-item-button">
+                        <img src="img/icon-cart.svg" alt="Корзина">
+                        <a href="#">Корзина: пока пуста</a>
+                    </div>
+                </li>
             </ul>
             <div class="site-header__nav-delivery">
                 <a href="#">Бесплатная доставка по России</a>
-                </<div>
             </div>
         </nav>
+        <ul class="site-header__additional-links">
+        <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
+        <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
+        </ul>
     </header>
     <main class="site-content">
         <section class="buy-form">
-            <div class="buy-form__modal">
-                <!--модалка -->
-                <form method="POST" action="https://echo.htmlacademy.ru/" class="buy-form__form">
-                    <h2 class="mishka__h2 mishka__capitalize buy-form__h2">Добавить в корзину</h2>
-                    <div class="buy-form__notation-wrapper">
-                        <p class="buy-form__notation">Выберите размер:</p>
-                        <br>
-                    </div>
-                    <div class="buy-form__input-wrapper">
-                        <div class="buy-form__radio-wrapper">
-                            <label class="buy-form__label mishka__capitalize" for="s">S</label>
-                            <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
-                            <label class="buy-form__label mishka__capitalize" for="m">M</label>
-                            <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
-                            <label class="buy-form__label mishka__capitalize" for="l">L</label>
-                            <input class="buy-form__radio" type="radio" name="size" id="l">
+            <div class="buy-form__wrapper">
+                <div class="buy-form__modal">
+                    <!--модалка -->
+                    <form method="POST" action="https://echo.htmlacademy.ru/" class="buy-form__form">
+                        <h2 class="mishka__h2 mishka__capitalize buy-form__h2">Добавить в корзину</h2>
+                        <div class="buy-form__notation-wrapper">
+                            <p class="buy-form__notation">Выберите размер:</p>
+                            <br>
                         </div>
-                        <br>
-                        <div class="buy-form__radio-wrapper">
-                            <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                        <div class="buy-form__input-wrapper">
+                            <div class="buy-form__radio-wrapper">
+                                <label class="buy-form__label mishka__capitalize" for="s">S</label>
+                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
+                                <label class="buy-form__label mishka__capitalize" for="m">M</label>
+                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
+                                <label class="buy-form__label mishka__capitalize" for="l">L</label>
+                                <input class="buy-form__radio" type="radio" name="size" id="l">
+                            </div>
+                            <br>
+                            <div class="buy-form__radio-wrapper">
+                                <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="site-content__page-title">
@@ -80,6 +83,7 @@
             </div>
             </section>
             <section class="site-content__categories">
+            <div class="site-content__categories-wrapper">
                 <ul class="site-content__categories-item-list">
                     <li class="site-content__categories-item">
                         <a href="#">Предметы интерьера</a>
@@ -94,6 +98,9 @@
                         </div>
                     </li>
                 </ul>
+                <div class="mishka__line"> 
+                </div>
+              </div>
             </section>
             <section class="goods-card">
                 <div class="goods-card__wrapper">
@@ -206,7 +213,8 @@
                     </ul>
                 </div>
                 <figure class="site-contacts__map">
-                    <!-- заглушка для карты -->
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31982.07460274509!2d30.28319892274384!3d59.93413895978043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LMuINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDRg9C7LiDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDQtC4gMTkvONCxINC-0YTQuNGBIDEwMQ!5e0!3m2!1sru!2s!4v1497624730627" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </figure>
                 <div class="site-contacts__button">
                     <p class="site-button__text mishka__capitalize"><a href="#">Напишите нам</a>
@@ -233,8 +241,10 @@
                     </div>
                 </div>
                 <section class="site-footer__copyrigth">
-                    <span class="site-footer__copyrigth-span"><h3 class="mishka__h3 site-footer__copyrigth-text">Разработано</h3></span>
-                    <span class="site-footer__copyrigth-span"><a href="#"> <img src="./img/logo-htmlacademy.svg" alt="HTML Academy"> </a></span>
+                    <div class="site-footer__copyrigth-wrapper">
+                        <span class="site-footer__copyrigth-span"><h3 class="mishka__h3 site-footer__copyrigth-text">Разработано</h3></span>
+                        <span class="site-footer__copyrigth-span"><a href="#"> <img src="./img/logo-htmlacademy.svg" alt="HTML Academy"> </a></span>
+                    </div>
                 </section>
             </div>
         </footer>

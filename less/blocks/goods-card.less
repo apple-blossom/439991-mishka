@@ -1,5 +1,16 @@
+.goods-card {
+    display: block;
+    margin: 30px auto;
+    color: @text-color;
+    line-height: 24px;
+}
+
 .goods-card__text {
     .text();
+}
+
+.goods-card__notation {
+    line-height: 17px;
 }
 
 .goods-card__button {
@@ -16,12 +27,6 @@
 }
 
 @media @mobile {
-    .goods-card {
-        display: block;
-        margin: 30px auto;
-        color: @text-color;
-        line-height: 24px;
-    }
     .goods-card__name {
         font-size: 25px;
         .clear-indent();
@@ -70,10 +75,6 @@
 
 @media @tablet {
     .goods-card {
-        display: flex;
-        margin: 30px auto;
-        color: @text-color;
-        line-height: 24px;
         flex-direction: column;
     }
     .goods-card__head {
@@ -146,7 +147,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-        width: 620px;
+        width: 700px;
         margin: 40px 0;
     }
     .goods-card__name {
@@ -154,13 +155,13 @@
         .clear-indent();
     }
     .goods-card__notation {
-        margin: 0 20px;
+        margin: auto;
         .font(@cyan-light);
         width: 80px;
         text-align: center;
     }
     .goods-card__left {
-        margin-left: 200px;
+        margin-left: 175px;
         height: 400px;
         width: 400px;
     }

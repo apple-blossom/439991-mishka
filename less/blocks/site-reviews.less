@@ -11,6 +11,11 @@
     background: url("../img/icon-right-arrow.svg") no-repeat 50%;
 }
 
+.site-reviews__author-name {
+    .h(left);
+    color: #000;
+}
+
 @media @mobile {
     .site-reviews__wrapper {
         width: 320px;
@@ -38,9 +43,10 @@
         font-size: 17px;
         margin: 15px 5px auto auto;
     }
-    .site-reviews__author {
-        .h(left);
-        color: #000;
+    .site-reviews__author-name {
+        width: 260px;
+        margin: 0;
+        pagging-bottom: 20px;
     }
     .site-reviews__link {
         .clear-indent();

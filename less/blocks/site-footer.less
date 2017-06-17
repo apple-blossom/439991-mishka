@@ -18,12 +18,18 @@
 
 .site-footer__copyrigth {
     display: flex;
+}
+
+.site-footer__copyrigth-wrapper{
+    width: 200px;
+    margin: auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .site-footer__social-links-wrapper {
-    width: 60%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -47,6 +53,7 @@
     .site-footer__wrapper {
         width: 320px;
         margin: auto;
+
     }
     .site-footer__logo {
         display: none;
@@ -56,10 +63,22 @@
         height: 60px;
         width: 80%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+
+         &::before {
+            content: "";
+            display: block;
+            width: 260px;
+            height: 5px;
+            border-bottom: @border;
+            margin: auto;
+            margin-bottom: 20px;
+        }
     }
     .site-footer__copyrigth-span {
-        width: 60%;
-        height: 40px;
+        vertical-align: middle;
+
         img {
             .img(35px);
             float: right;
@@ -77,17 +96,20 @@
         margin: auto;
         height: 60px;
     }
+    .site-footer__social-links-wrapper {
+        width: 70%;
+    }
 }
 
 @media @desktop {
     .site-footer__wrapper {
-        width: 1050px;
+        width: 1150px;
     }
 }
 
 @media @tablet {
     .site-footer__wrapper {
-        width: 668px;
+        width: 768px;
     }
 }
 
@@ -98,15 +120,14 @@
         align-items: center;
         max-width: 100%;
         height: 80px;
+        justify-content: space-between;
     }
     .site-footer__copyrigth {
         height: 60px;
         width: 200px;
-        margin: auto;
     }
     .site-footer__copyrigth-span {
-        width: 40px;
-        height: 40px;
+        margin: auto;
         img {
             .img(35px);
             padding-right: 20px;
@@ -123,6 +144,5 @@
         height: 60px;
         width: 200px;
         background: url("../img/logo-mobile.svg") no-repeat 50%;
-        margin: auto;
     }
 }

@@ -10,41 +10,42 @@
 
 <body class="mishka">
     <header class="site-header">
-        <section class="site-logo">
-            <a class="" href="/index.html">
-                <div class="site-header__logo"></div>
-            </a>
-        </section>
-        <section class="site-header__menu-button">
-            <button class="mishka__button site-header__button">
-            </button>
-        </section>
         <nav class="site-header__nav">
-            <ul class="site-header__nav-item-list">
-                <div class="site-header__nav-item-container-bottom">
-                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
-                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
-                </div>
-                <div class="site-header__nav-item-container-top">
-                    <li class="site-header__nav-item-img">
-                        <div class="site-header__menu-item-button">
-                            <img src="img/search.svg" alt="Поиск">
-                            <a href="#"> Поиск по сайту</a>
-                        </div>
-                    </li>
-                    <li class="site-header__nav-item-img">
-                        <div class="site-header__menu-item-button">
-                            <img src="img/icon-cart.svg" alt="Корзина">
-                            <a href="#">Корзина: пока пуста</a>
-                        </div>
-                    </li>
-                </div>
+            <section class="site-header__menu-button">
+                <button class="mishka__button site-header__button">
+                </button>
+            </section>
+            <section class="site-logo">
+                <a class="" href="/index.html">
+                    <div class="site-header__logo"></div>
+                </a>
+            </section>
+            <ul class="site-header__nav-item-container-bottom">
+                <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="site-header__nav-item-container-top">
+                <li class="site-header__nav-item-img">
+                    <div class="site-header__menu-item-button">
+                        <img src="img/search.svg" alt="Поиск">
+                        <a href="#"> Поиск по сайту</a>
+                    </div>
+                </li>
+                <li class="site-header__nav-item-img">
+                    <div class="site-header__menu-item-button">
+                        <img src="img/icon-cart.svg" alt="Корзина">
+                        <a href="#">Корзина: пока пуста</a>
+                    </div>
+                </li>
             </ul>
             <div class="site-header__nav-delivery">
                 <a href="#">Бесплатная доставка по России</a>
-                </<div>
             </div>
         </nav>
+        <ul class="site-header__additional-links">
+        <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
+        <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
+        </ul>
     </header>
     <main class="order-page">
         <div class="mishka__wrapper-responsive">
@@ -71,7 +72,7 @@
                         <div class="order-page__form-input-wrap">
                             <div class="order-page__form-item">
                                 <input class="mishka__input order-page__form-radio" type="radio" name="type" id="accessory" checked>
-                                <label class="order-page__form-label" for="accessory">
+                                <label class="order-page__form-label" for="accessory"> <span class="order-page__form-radio"></span>
                                     <p class="order-page__form-item-name">Аксессуар для интерьера
                                     </p>
                                 </label>
@@ -80,6 +81,7 @@
                             <div class="order-page__form-item">
                                 <input class="mishka__input order-page__form-radio" type="radio" name="type" id="toy">
                                 <label class="order-page__form-label" for="toy">
+                                <span class="order-page__form-radio"></span>
                                     <p class="order-page__form-item-name">Детская игрушка
                                     </p>
                                 </label>
@@ -98,6 +100,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="white">
                                         <label class="order-page__form-label" for="white">
+                                        <span class="order-page__form-checkbox"></span>
                                             <p class="order-page__form-item-name">Белый
                                             </p>
                                         </label>
@@ -106,6 +109,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="gray">
                                         <label class="order-page__form-label" for="gray">
+                                        <span class="order-page__form-checkbox"></span>
                                             <p class="order-page__form-item-name">Серый
                                             </p>
                                         </label>
@@ -114,6 +118,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="tiffany">
                                         <label class="order-page__form-label" for="tiffany">
+                                        <span class="order-page__form-checkbox"></span>
                                             <p class="order-page__form-item-name"> "Тиффани"
                                             </p>
                                         </label>
@@ -122,6 +127,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="black">
                                         <label class="order-page__form-label" for="black">
+                                        <span class="order-page__form-checkbox"></span>
                                             <p class="order-page__form-item-name"> Черный
                                             </p>
                                         </label>
@@ -130,6 +136,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="pink">
                                         <label class="order-page__form-label" for="pink">
+                                        <span class="order-page__form-checkbox"></span>
                                             <p class="order-page__form-item-name"> Розовый
                                             </p>
                                         </label>
@@ -138,6 +145,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-checkbox" type="checkbox" name="color" id="orange">
                                         <label class="order-page__form-label" for="orange">
+                                        <span class="order-page__form-checkbox"></span>
                                             <p class="order-page__form-item-name">Оранжевый
                                             </p>
                                         </label>
@@ -154,20 +162,20 @@
                         </div>
                         <div class="order-page__form-input-wrap">
                             <div class="order-page__form-fields-wrap">
-                                <label class="order-page__form-label" for="name">
+                                <label class="order-page__form-fio-label" for="name">
                                     <p class="order-page__form-p-text">Имя:
                                     </p>
                                 </label>
                                 <input class="mishka__input order-page__form-text" type="text" id="name" placeholder="Введите ваше имя*" required>
                             </div>
                             <div class="order-page__form-fields-wrap">
-                                <label class="order-page__form-label" for="surname">
+                                <label class="order-page__form-fio-label" for="surname">
                                     <p class="order-page__form-p-text">Фамлия:</p>
                                 </label>
                                 <input class="mishka__input order-page__form-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
                             </div>
                             <div class="order-page__form-fields-wrap">
-                                <label class="order-page__form-label" for="patronymic">
+                                <label class="order-page__form-fio-label" for="patronymic">
                                     <p class="order-page__form-p-text">
                                         Отчество:
                                     </p>
