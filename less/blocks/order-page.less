@@ -53,6 +53,13 @@ input[type="radio"], input[type="checkbox"] {
     cursor: pointer;
 }
 
+input[type="checkbox"]:checked + label .order-page__form-checkbox {
+    background: url(../img/icon-tick.svg) no-repeat 50%;
+}
+
+input[type="radio"]:checked + label .order-page__form-radio {
+    background: url(../img/icon-radio.svg) no-repeat 50%;
+}
 
 .order-page__form-notation {
     .text();
