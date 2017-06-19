@@ -15,12 +15,14 @@
     .clear-indent();
 }
 
-input[type="radio"], input[type="checkbox"] {
-    display:none;
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
 }
 
 input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder, {
+textarea::-webkit-input-placeholder,
+{
     color: #000;
     opacity: 0.5;
     font-size: 15px;
@@ -49,11 +51,9 @@ textarea::-webkit-input-placeholder, {
     margin: auto;
     min-width: 40px;
     margin-right: 10px;
-    display: inline-block;
 }
 
 .order-page__form-radio {
-    display: inline-block;
     margin: -1px 4px 0 0;
     vertical-align: middle;
     background-color: #fff;
@@ -63,7 +63,6 @@ textarea::-webkit-input-placeholder, {
 }
 
 .order-page__form-checkbox {
-    display:inline-block;
     width: 50px;
     height: 50px;
     margin: -1px 4px 0 0;
@@ -129,20 +128,17 @@ input[type="radio"]:checked + label .order-page__form-radio {
         text-align: left;
         .clear-indent();
     }
-    .order-page__form-radio, 
-    .order-page__form-checkbox  {
+    .order-page__form-radio,
+    .order-page__form-checkbox {
         width: 36px;
         height: 36px;
     }
-
     input[type="radio"]:checked + label .order-page__form-radio {
         background-size: 15px 15px;
     }
-
     input[type="checkbox"]:checked + label .order-page__form-checkbox {
         background-size: 20px 20px;
     }
-    
     .order-page__form-item-name {
         max-width: 155px;
     }
@@ -212,14 +208,12 @@ input[type="radio"]:checked + label .order-page__form-radio {
         margin-left: 100px;
         width: 100%;
     }
-
     .order-page__form-legend {
         .font(@cyan-light);
         border: none;
         margin: 0;
         padding-top: 20px;
     }
-
     .order-page__form-label {
         width: 240px;
     }
@@ -261,7 +255,6 @@ input[type="radio"]:checked + label .order-page__form-radio {
         flex-wrap: wrap;
         max-width: 470px;
     }
-
     .order-page__form-row-small {
         display: flex;
         width: 670px;
@@ -279,7 +272,8 @@ input[type="radio"]:checked + label .order-page__form-radio {
         width: 100%;
     }
     .order-page__form-textarea {
-        width: 500px;;
+        width: 500px;
+        ;
         max-height: 145px;
     }
     .order-page__form-submit-wrap {
@@ -330,7 +324,6 @@ input[type="radio"]:checked + label .order-page__form-radio {
     .order-page__form-notation {
         margin: auto 0;
     }
-
     .order-page__form-radio {
         min-width: 50px;
         min-height: 50px;
@@ -375,7 +368,6 @@ input[type="radio"]:checked + label .order-page__form-radio {
         padding-top: 20px;
         self-align: left;
     }
-
     .order-page__form-item {
         height: 40px;
         margin-top: 10px;
@@ -408,7 +400,6 @@ input[type="radio"]:checked + label .order-page__form-radio {
         max-height: 160px;
         min-height: 145px;
     }
-
     .order-page__form-row-small {
         display: flex;
         width: 1050px;

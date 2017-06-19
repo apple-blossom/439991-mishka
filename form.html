@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
     <title>HTML Academy: Мишка</title>
 </head>
 
@@ -12,7 +14,7 @@
     <header class="site-header">
         <nav class="site-header__nav">
             <section class="site-header__menu-button">
-                <button class="site-button site-header__button">
+                <button id="menu-button" class=" site-header__button">
                 </button>
             </section>
             <section class="site-logo">
@@ -20,21 +22,27 @@
                     <div class="site-header__logo"></div>
                 </a>
             </section>
-            <ul class="site-header__nav-item-container-bottom">
+            <ul class="site-header__nav-item-container-bottom site-header__nav-item-container-bottom--closed">
                 <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
                 <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
             </ul>
-            <ul class="site-header__nav-item-container-top">
+            <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
                 <li class="site-header__nav-item-img">
                     <div class="site-header__menu-item-button">
-                        <img src="img/search.svg" alt="Поиск">
-                        <a href="#"> Поиск по сайту</a>
+                        <a href="#">
+                            <span class="site-header__nav-item-search"> 
+                        </span>
+                            <span class="site-header__nav-item-a"> Поиск по сайту</span>
+                        </a>
                     </div>
                 </li>
                 <li class="site-header__nav-item-img">
                     <div class="site-header__menu-item-button">
-                        <img src="img/icon-cart.svg" alt="Корзина">
-                        <a href="#">Корзина: пока пуста</a>
+                        <a href="#">
+                            <span class="site-header__nav-item-cart"> 
+                        </span>
+                            <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -43,8 +51,8 @@
             </div>
         </nav>
         <ul class="site-header__additional-links">
-        <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
-        <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
+            <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
+            <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
         </ul>
     </header>
     <main class="order-page">
@@ -80,7 +88,7 @@
                             <div class="order-page__form-item">
                                 <input class="mishka__input order-page__form-button" type="radio" name="type" id="toy">
                                 <label class="order-page__form-label" for="toy">
-                                <span class="order-page__form-radio"></span>
+                                    <span class="order-page__form-radio"></span>
                                     <span class="order-page__form-item-name">Детская игрушка
                                     </span>
                                 </label>
@@ -99,7 +107,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-button" type="checkbox" name="color" id="white">
                                         <label class="order-page__form-label" for="white">
-                                        <span class="order-page__form-checkbox"></span>
+                                            <span class="order-page__form-checkbox"></span>
                                             <span class="order-page__form-item-name">Белый
                                             </span>
                                         </label>
@@ -107,7 +115,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-button" type="checkbox" name="color" id="gray">
                                         <label class="order-page__form-label" for="gray">
-                                        <span class="order-page__form-checkbox"></span>
+                                            <span class="order-page__form-checkbox"></span>
                                             <span class="order-page__form-item-name">Серый
                                             </span>
                                         </label>
@@ -115,7 +123,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-button" type="checkbox" name="color" id="tiffany">
                                         <label class="order-page__form-label" for="tiffany">
-                                        <span class="order-page__form-checkbox"></span>
+                                            <span class="order-page__form-checkbox"></span>
                                             <span class="order-page__form-item-name"> "Тиффани"
                                             </span>
                                         </label>
@@ -123,7 +131,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-button" type="checkbox" name="color" id="black">
                                         <label class="order-page__form-label" for="black">
-                                        <span class="order-page__form-checkbox"></span>
+                                            <span class="order-page__form-checkbox"></span>
                                             <span class="order-page__form-item-name"> Черный
                                             </span>
                                         </label>
@@ -131,7 +139,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-button" type="checkbox" name="color" id="pink">
                                         <label class="order-page__form-label" for="pink">
-                                        <span class="order-page__form-checkbox"></span>
+                                            <span class="order-page__form-checkbox"></span>
                                             <span class="order-page__form-item-name"> Розовый
                                             </span>
                                         </label>
@@ -139,7 +147,7 @@
                                     <div class="order-page__form-item">
                                         <input class="mishka__input order-page__form-button" type="checkbox" name="color" id="orange">
                                         <label class="order-page__form-label" for="orange">
-                                        <span class="order-page__form-checkbox"></span>
+                                            <span class="order-page__form-checkbox"></span>
                                             <span class="order-page__form-item-name">Оранжевый
                                             </span>
                                         </label>
@@ -224,7 +232,7 @@
             </section>
         </div>
     </main>
-   <div class="mishka__wrapper-responsive">
+    <div class="mishka__wrapper-responsive">
         <footer class="site-footer">
             <div class="site-footer__wrapper">
                 <section class="site-footer__logo">

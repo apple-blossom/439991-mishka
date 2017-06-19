@@ -29,14 +29,20 @@
             <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
                 <li class="site-header__nav-item-img">
                     <div class="site-header__menu-item-button">
-                        <img src="img/search.svg" alt="Поиск">
-                        <a href="#"> Поиск по сайту</a>
+                        <a href="#">
+                            <span class="site-header__nav-item-search"> 
+                        </span>
+                            <span class="site-header__nav-item-a"> Поиск по сайту</span>
+                        </a>
                     </div>
                 </li>
                 <li class="site-header__nav-item-img">
                     <div class="site-header__menu-item-button">
-                        <img src="img/icon-cart.svg" alt="Корзина">
-                        <a href="#">Корзина: пока пуста</a>
+                        <a href="#">
+                            <span class="site-header__nav-item-cart"> 
+                        </span>
+                            <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -55,21 +61,21 @@
                 <div class="buy-form__modal">
                     <!--модалка -->
                     <form method="POST" action="https://echo.htmlacademy.ru/" class="buy-form__form">
-                        <h2 class="mishka__h2 mishka__capitalize buy-form__h2">Добавить в корзину</h2>
+                        <h3 class="mishka__h3 mishka__capitalize buy-form__h3">Добавить в корзину</h3>
                         <div class="buy-form__notation-wrapper">
                             <p class="buy-form__notation">Выберите размер:</p>
                         </div>
                         <div class="buy-form__input-wrapper">
                             <div class="buy-form__radio-wrapper">
+                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" value="s">
                                 <label class="buy-form__label mishka__capitalize" for="s">S</label>
-                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
+                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="m" value="m">
                                 <label class="buy-form__label mishka__capitalize" for="m">M</label>
-                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
-                                <label class="buy-form__label mishka__capitalize" for="l">L</label>
                                 <input class="buy-form__radio" type="radio" name="size" id="l">
+                                <label class="buy-form__label mishka__capitalize" for="l" value="l">L</label>
                             </div>
                             <div class="buy-form__radio-wrapper">
-                                <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                                <input class="buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
                             </div>
                         </div>
                     </form>
@@ -111,9 +117,8 @@
                 </div>
                 <div class="goods-card__img">
                     <img src="./img/triple-set-mobile@1x.jpg" alt="">
-                    </div>
+                </div>
                 <div class="goods-card__left">
-
                     <p class="goods-card__text">
                         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
                     </p>
@@ -131,16 +136,15 @@
                             <td class="goods-card__parameters-td">15 см.</td>
                         </tr>
                     </table>
-                    </div>
-                    <div class="goods-card__price">Цена: 990 руб.</div>
-
-                    <button class="site-button site-button goods-card__button">
-                        <span class="site-button__text mishka__capitalize">
+                </div>
+                <div class="goods-card__price">Цена: 990 руб.</div>
+                <button id="buy" class="site-button site-button goods-card__button">
+                    <span class="site-button__text mishka__capitalize">
                         Заказать
                         </span>
-                    </button>
-                    </div>
-                </section>
+                </button>
+            </div>
+        </section>
         <div class="site-content__divider"></div>
         <section class="about-us">
             <h2 class="mishka__h2 about-us__title">Коротко о нас:</h2>
@@ -179,9 +183,9 @@
                     </span>
                 </button>
                 <blockquote class="site-reviews__review">
-                <p class="site-reviews__review-text">
-                    Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!
-                  </p>
+                    <p class="site-reviews__review-text">
+                        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!
+                    </p>
                     <cite class="site-reviews__author">
                         <span class="site-reviews__author-name">Анастасия Красильникова</span>
                         <span class="site-reviews__link">@misssssiskras</span>
@@ -230,6 +234,8 @@
         <footer class="site-footer">
             <div class="site-footer__wrapper">
                 <section class="site-footer__logo">
+                    <a class="" href="/index.html">
+                    </a>
                 </section>
                 <div class="site-footer__social-links">
                     <div class="site-footer__social-links-wrapper">

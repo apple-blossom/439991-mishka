@@ -5,6 +5,11 @@
     margin: 40px auto;
     outline: none;
     background-color: #FFF;
+    cursor: pointer;
+    &::hover {
+        background-color: @text-color;
+        border: 2px solid @text-color;
+    }
 }
 
 .site-button__text {
@@ -15,7 +20,7 @@
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
-    a {
-        .a(@text-color);
+    &::hover {
+        color: #FFF;
     }
 }

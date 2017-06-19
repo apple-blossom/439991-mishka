@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
     <title>HTML Academy: Мишка</title>
 </head>
 
@@ -12,7 +14,7 @@
     <header class="site-header">
         <nav class="site-header__nav">
             <section class="site-header__menu-button">
-                <button class="site-button site-header__button">
+                <button id="menu-button" class=" site-header__button">
                 </button>
             </section>
             <section class="site-logo">
@@ -20,21 +22,27 @@
                     <div class="site-header__logo"></div>
                 </a>
             </section>
-            <ul class="site-header__nav-item-container-bottom">
+            <ul class="site-header__nav-item-container-bottom site-header__nav-item-container-bottom--closed">
                 <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
                 <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
             </ul>
-            <ul class="site-header__nav-item-container-top">
+            <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
                 <li class="site-header__nav-item-img">
                     <div class="site-header__menu-item-button">
-                        <img src="img/search.svg" alt="Поиск">
-                        <a href="#"> Поиск по сайту</a>
+                        <a href="#">
+                            <span class="site-header__nav-item-search"> 
+                        </span>
+                            <span class="site-header__nav-item-a"> Поиск по сайту</span>
+                        </a>
                     </div>
                 </li>
                 <li class="site-header__nav-item-img">
                     <div class="site-header__menu-item-button">
-                        <img src="img/icon-cart.svg" alt="Корзина">
-                        <a href="#">Корзина: пока пуста</a>
+                        <a href="#">
+                            <span class="site-header__nav-item-cart"> 
+                        </span>
+                            <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -59,15 +67,15 @@
                         </div>
                         <div class="buy-form__input-wrapper">
                             <div class="buy-form__radio-wrapper">
+                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" value="s">
                                 <label class="buy-form__label mishka__capitalize" for="s">S</label>
-                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="s" checked>
+                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="m" value="m">
                                 <label class="buy-form__label mishka__capitalize" for="m">M</label>
-                                <input class="mishka__input buy-form__radio" type="radio" name="size" id="m">
-                                <label class="buy-form__label mishka__capitalize" for="l">L</label>
                                 <input class="buy-form__radio" type="radio" name="size" id="l">
+                                <label class="buy-form__label mishka__capitalize" for="l" value="l">L</label>
                             </div>
                             <div class="buy-form__radio-wrapper">
-                                <input class="mishka__input buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
+                                <input class="buy-form__submit mishka__capitalize" type="submit" name="add" value="Добавить">
                             </div>
                         </div>
                     </form>
@@ -135,10 +143,11 @@
                 </div>
                 <div class="catalog-page__video-title">
                     <span class="catalog-page__video-icon"> <img src="img/video.svg"   alt=""></span>
-                    <div class="catalog-page__video-name"> <h3 class="mishka__h3 catalog-page__video-h">Процесс производства </h3></div>
+                    <div class="catalog-page__video-name">
+                        <h3 class="mishka__h3 catalog-page__video-h">Процесс производства </h3></div>
                 </div>
                 <p class="catalog-page__video-text"> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-                <button class="site-button catalog-button">
+                <button id="buy" class="site-button catalog-button">
                     <span class="catalog-button__text mishka__capitalize site-button__text">Сделать заказ
                     </span>
                 </button>
