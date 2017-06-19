@@ -14,6 +14,10 @@
 .site-contacts__map {
     .clear-indent();
     height: 460px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .site-contacts__button {
@@ -22,6 +26,7 @@
     border: 2px solid @text-color;
     margin: 40px auto;
     width: 257px;
+    padding: 0;
 }
 
 @media @mobile {
@@ -38,18 +43,21 @@
     }
     .site-contacts__list {
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        width: 260px;
+        margin: auto;
     }
     .site-contacts__list-item {
-        margin: 10px auto;
+        margin: 10px 0;
     }
     .site-contacts__name {
         width: 60px;
     }
     .site-contacts__content {
-        width: 200px;
+        width: 150px;
     }
     .site-contacts__map {
+        margin-top: 40px;
         width: 100%;
         background: url("../img/map-mobile@1x.jpg") no-repeat 100%;
     }

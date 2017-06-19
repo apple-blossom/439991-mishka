@@ -75,7 +75,6 @@
 
 @media @tablet {
     .catalog-good {
-        height: 335px;
         width: 668px;
         margin: auto;
         margin-bottom: 50px;
@@ -89,7 +88,7 @@
         justify-content: space-between;
     }
     .catalog-good__img {
-        min-height: 335px;
+        height: 335px;
         width: 335px;
     }
     .catalog-good__buy {
@@ -105,13 +104,13 @@
 
 @media @desktop {
     .catalog-good {
-        height: 660px;
         width: 315px;
         display: flex;
         flex-direction: column;
     }
     .catalog-good__info {
-        margin: auto 30px;
+        margin: 20px 30px;
+        height: 140px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -119,12 +118,14 @@
     .catalog-good__img {
         min-height: 460px;
         max-width: 315px;
+        margin-bottom: 10px;
         img {
             .img(460px);
         }
     }
     .catalog-good__name {
         margin: 0;
+        vertical-align: top;
     }
     .catalog-good__buy {
         margin: 0;
@@ -133,7 +134,7 @@
             width: 260px;
         }
     }
-    .catalog-good__wrapper {
+    .catalog-wrapper {
         display: flex;
         width: 1050px;
         margin: auto;

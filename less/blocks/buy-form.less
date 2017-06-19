@@ -1,18 +1,35 @@
 .buy-form {
+    display: none;
+}
+
+.buy-form--open {
+    margin: auto;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 9998;
+}
+
+.buy-form__wrapper {
     width: 570px;
     margin: auto;
-    //display: flex;
-    display: none;
 }
 
 .buy-form__modal {
     position: absolute;
+    top: 45px;
     height: 335px;
     width: 570px;
     border: @border;
     background-color: #fff;
     z-index: 9999;
     display: flex;
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .buy-form::active {
@@ -37,7 +54,7 @@
     color: @text-color;
 }
 
-.buy-form__h2,
+.buy-form__h3,
 .buy-form__notation-wrapper {
     text-align: center;
 }
@@ -61,6 +78,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
+}
+
+.buy-form__radio:checked+.buy-form__label {
+    border: 2px solid @cyan-dark;
 }
 
 .buy-form__label:hover {
@@ -81,6 +103,9 @@
     background-color: @cyan-dark;
     .font(#fff);
     font-size: 17px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
 }
 
 @media @mobile {
@@ -88,12 +113,12 @@
         height: 335px;
         width: 320px;
     }
-    .buy-form__h2,
+    .buy-form__h3,
     .buy-form__notation-wrapper {
         width: 160px;
         margin: auto;
     }
-    .buy-form {
+    .buy-form__wrapper {
         width: 320px;
     }
     .buy-form__radio-wrapper {

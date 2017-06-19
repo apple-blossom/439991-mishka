@@ -5,38 +5,52 @@
     border: none;
     height: @height;
 }
-.img-inline(@height: auto; @width: auto) {
+
+.img-inline(@height: auto;
+@width: auto) {
     display: inline-block;
     border: none;
     height: @height;
     width: @width;
 }
 
-.clear-indent(@padding: 0; @margin: 0;) {
+.clear-indent(@padding: 0;
+@margin: 0;
+) {
     padding: @padding;
     margin: @margin;
 }
 
-.a(@color: #000; @size: 19px;) {
+.a(@color: #000;
+@size: 19px;
+) {
     text-decoration: none;
     color: @color;
     outline: none;
     font-weight: bold;
     font-size: @size;
     line-height: 24px;
+    &::hover {
+        color: #666;
+    }
+    &::active {
+        color: #b2b2b2;
+    }
 }
 
-.h(@left: left;) {
+.h(@left: left;
+) {
     font-weight: bold;
     text-align: @left;
 }
 
-.font(@color: #000;) {
+.font(@color: #000;
+) {
     color: @color;
     font-weight: bold;
 }
 
-.text(){
+.text() {
     color: @text-color;
     font-size: 15px;
     line-height: 24px;
