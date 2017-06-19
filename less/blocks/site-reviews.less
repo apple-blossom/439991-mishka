@@ -1,6 +1,13 @@
+.site-reviews__review {
+    line-height: 30px;
+    font-size: 15px;
+    color: @text-color;
+}
+
 .site-reviews__button {
     height: 50px;
     border: 2px solid @text-color;
+    padding: 0;
 }
 
 .site-reviews__nav-arrow-l {
@@ -12,8 +19,15 @@
 }
 
 .site-reviews__author-name {
-    .h(left);
+    font-size: 19px;
     color: #000;
+    font-weight: bold;
+}
+
+.site-reviews__review-text {
+    white-space: pre-line;
+    display: inline;
+    text-align: left;
 }
 
 @media @mobile {
@@ -30,11 +44,9 @@
     .site-reviews__title {
         .h(left);
     }
-    .site-reviews__text {
+    .site-reviews__review {
         .clear-indent();
-        line-height: 30px;
-        font-size: 15px;
-        color: @text-color;
+        
         width: 90%;
     }
     .site-reviews__author,
@@ -47,6 +59,7 @@
         width: 260px;
         margin: 0;
         pagging-bottom: 20px;
+        font-size: 17px;
     }
     .site-reviews__link {
         .clear-indent();
@@ -93,6 +106,7 @@
         margin: auto;
         background: url("../img/review@1x.jpg") no-repeat;
         margin-bottom: 60px;
+        
     }
     .site-reviews {
         margin-left: 205px;
@@ -102,16 +116,22 @@
 
 @media @desktop,
 @tablet {
+    .site-reviews__wrapper { 
+        min-height: 460px;
+    }
+
+    .site-reviews{ 
+        padding-top: 60px;
+    }
+
     .site-reviews__title {
         .h(left);
         display: inline-block;
         margin: 30px auto;
     }
-    .site-reviews__text {
-        line-height: 30px;
-        font-size: 15px;
-        color: @text-color;
-        margin: 20px auto;
+    .site-reviews__review {
+        margin: 0;
+        display: block;
     }
     .site-reviews__button {
         width: 170px;
@@ -123,28 +143,29 @@
     .site-reviews__link {
         font-style: normal;
         font-size: 17px;
-        margin: 30px auto;
+        margin: 0;
+        display: block;
     }
     .site-reviews__author {
-        display: inline-block;
+        float: left;
+        padding-top: 40px;
     }
     .site-reviews__author-name {
-        .h(left);
-        color: #000;
-        width: 260px;
         .clear-indent();
     }
+
     .site-reviews__link {
         .clear-indent();
         width: 260px;
     }
     .site-reviews__nav {
         width: 170px;
-        margin: 20px 0;
+        margin: 0;
         height: 55px;
         display: inline-table;
         border: none;
         float: right;
+        padding-top: 40px;
     }
     .site-reviews__nav-arrow-l,
     .site-reviews__nav-arrow-r {

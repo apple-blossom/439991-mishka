@@ -15,6 +15,28 @@
     .clear-indent();
 }
 
+.site-content__categories-item {
+    background-color: @cyan-dark;
+    width: 50%;
+    height: auto;
+    margin: 0;
+      a {
+        .a(#fff);
+        .font(#fff);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height: 100px;
+        width: 100% - 10px;
+
+    }
+}
+
+.site-content__categories-item:last-of-type {
+    background-color: @cyan-light;
+}
+
 .site-content__divider {
     width: 100%;
     height: 10px;
@@ -22,10 +44,27 @@
     background-size: contain;
 }
 
+.site-content__categories-item-interior {
+    background: url(../img/icon-interior.svg) no-repeat 50%;
+}
+
+.site-content__categories-item-toy {
+    background: url(../img/icon-toy.svg) no-repeat 50%;
+}
+
+.site-content__categories-item-toy,
+.site-content__categories-item-interior {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0.5;
+    width: 70px;
+    height: 65px;
+}
+
 @media @mobile {
     .site-content__page-title {
         height: 285px;
-        background: url(../img/hero-mobile@1x.jpg) no-repeat 50%;
+        background: #FFF url(../img/hero-mobile@1x.jpg) no-repeat 50%;
         background-color: #f9f9f9;
         h1 {
             padding: 75px 10px;
@@ -46,40 +85,15 @@
         .clear-indent();
     }
     .site-content__categories-item {
-        display: block;
         width: 100%;
         height: auto;
-        overflow: hidden;
-        background-color: @cyan-dark;
-        margin: 0;
-        padding: 20px 0;
-        a {
-            .a(#fff);
-            .font(#fff);
-            display: inline-block;
-            margin-left: 10px;
-            padding: 20px 0;
-        }
-    }
-    .site-content__categories-item:last-of-type {
-        background-color: @cyan-light;
-    }
-    .site-content__menu-item-img {
-        display: inline-block;
-        float: right;
-        padding-right: 20px;
-        opacity: 0.5;
-        width: 60px;
-        img {
-            .img(60px);
-        }
     }
 }
 
 @media @tablet {
     .site-content__page-title {
         height: 620px;
-        background: url(../img/hero-desktop.jpg) no-repeat 50%;
+        background: #FFF url(../img/hero-desktop.jpg) no-repeat 50%;
         background-color: #f9f9f9;
         h1 {
             padding: 150px 10px;
@@ -93,42 +107,14 @@
     }
     .site-content__categories-item-list {
         display: flex;
-        width: 660px;
-    }
-    .site-content__categories-item {
-        width: 50%;
-        height: auto;
-        display: inline-block;
-        background-color: @cyan-dark;
-        margin: 0;
-        padding: 20px 0;
-        a {
-            .a(#fff);
-            .font(#fff);
-            display: inline-block;
-            margin-left: 10px;
-            padding: 20px 0;
-        }
-    }
-    .site-content__categories-item:last-of-type {
-        background-color: @cyan-light;
-    }
-    .site-content__menu-item-img {
-        display: inline-block;
-        float: right;
-        padding-right: 20px;
-        opacity: 0.5;
-        width: 60px;
-        img {
-            .img(60px);
-        }
+        width: 668px;
     }
 }
 
 @media @desktop {
     .site-content__page-title {
         height: 620px;
-        background: url(../img/hero-desktop.jpg) no-repeat 50%;
+        background: #FFF url(../img/hero-desktop.jpg) no-repeat 50%;
         background-color: #f9f9f9;
         h1 {
             padding: 150px 10px;
@@ -144,34 +130,7 @@
         display: flex;
         width: 1050px;
     }
-    .site-content__categories-item {
-        width: 50%;
-        height: auto;
-        display: inline-block;
-        background-color: @cyan-dark;
-        margin: 0;
-        padding: 20px 0;
-        a {
-            .a(#fff);
-            .font(#fff);
-            display: inline-block;
-            margin-left: 10px;
-            padding: 20px 0;
-        }
-    }
-    .site-content__categories-item:last-of-type {
-        background-color: @cyan-light;
-    }
-    .site-content__menu-item-img {
-        display: inline-block;
-        float: right;
-        padding-right: 20px;
-        opacity: 0.5;
-        width: 60px;
-        img {
-            .img(60px);
-        }
-    }
+
     .site-content__divider {
         margin: 40px 0;
     }
