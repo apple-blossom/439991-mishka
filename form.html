@@ -12,53 +12,57 @@
 
 <body class="mishka">
     <header class="site-header">
-        <nav class="site-header__nav">
-            <section class="site-header__menu-button">
-                <button id="menu-button" class=" site-header__button">
-                </button>
-            </section>
-            <section class="site-logo">
-                <a class="" href="/index.html">
-                    <div class="site-header__logo"></div>
-                </a>
-            </section>
-            <ul class="site-header__nav-item-container-bottom site-header__nav-item-container-bottom--closed">
-                <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
-                <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
-            </ul>
-            <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
-                <li class="site-header__nav-item-img">
-                    <div class="site-header__menu-item-button">
-                        <a href="#">
-                            <span class="site-header__nav-item-search"> 
+        <div class="site-header__wrapper">
+            <nav class="site-header__nav">
+                <section class="site-header__menu-button">
+                    <button id="menu-button" class=" site-header__button">
+                    </button>
+                </section>
+                <section class="site-logo">
+                    <a class="" href="/index.html">
+                        <div class="site-header__logo"></div>
+                    </a>
+                </section>
+                <ul class="site-header__nav-item-container-bottom site-header__nav-item-container-bottom--closed">
+                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
+                </ul>
+                <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
+                    <li class="site-header__nav-item-img">
+                        <div class="site-header__menu-item-button">
+                            <a href="#">
+                                <span class="site-header__nav-item-search"> 
                         </span>
-                            <span class="site-header__nav-item-a"> Поиск по сайту</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="site-header__nav-item-img">
-                    <div class="site-header__menu-item-button">
-                        <a href="#">
-                            <span class="site-header__nav-item-cart"> 
+                                <span class="site-header__nav-item-a"> Поиск по сайту</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="site-header__nav-item-img">
+                        <div class="site-header__menu-item-button">
+                            <a href="#">
+                                <span class="site-header__nav-item-cart"> 
                         </span>
-                            <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
-                        </a>
-                    </div>
-                </li>
+                                <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="site-header__nav-delivery">
+                    <a href="#">Бесплатная доставка по России</a>
+                </div>
+            </nav>
+            <ul class="site-header__additional-links">
+                <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
+                <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
             </ul>
-            <div class="site-header__nav-delivery">
-                <a href="#">Бесплатная доставка по России</a>
-            </div>
-        </nav>
-        <ul class="site-header__additional-links">
-            <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
-            <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
-        </ul>
+        </div>
     </header>
     <main class="order-page">
         <div class="mishka__wrapper-responsive">
             <section class="page-title">
                 <h1 class="mishka__h1 page-title__text">Вязание на заказ</h1>
+                <div class="mishka__line">
+                </div>
             </section>
         </div>
         <div class="mishka__wrapper-content">
@@ -222,8 +226,8 @@
                         <div class="order-page__form-submit-wrap">
                             <p class="order-page__form-notation"> *Поля обязательны для заполнения</p>
                             <div class="order-page__form-submit-frame">
-                                <button class="site-button order-page__form-submit" type="submit" name="submit" value="Отправить заказ">
-                                    <span class="mishka__capitalize site-button__text"> Отправить заказ </span>
+                                <button class="site-button order-page__form-submit mishka__capitalize" type="submit" name="submit" value="">
+                                    Отправить заказ
                                 </button>
                             </div>
                         </div>

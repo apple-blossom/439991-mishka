@@ -26,7 +26,7 @@
     border: 2px solid @text-color;
     margin: 40px auto;
     width: 257px;
-    padding: 0;
+
 }
 
 @media @mobile {
@@ -80,7 +80,7 @@
         display: flex;
         margin: 30px auto;
     }
-    .site-contacts__title-h1 {
+    .site-contacts__title-h2 {
         width: 600px;
         display: inline-block;
     }
@@ -102,7 +102,7 @@
     }
     .site-contacts__map {
         width: 100%;
-        background: url("../img/map-tablet.jpg") no-repeat 100%;
+        background: url("../img/map-tablet@1x.jpg") no-repeat 100%;
     }
     .site-contacts__button {
         width: 230px;
@@ -127,16 +127,17 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .site-contacts__title-h1 {
+    .site-contacts__title-h2 {
         width: 300px;
         display: inline-block;
+        margin: 20px 0 40px 0;
     }
     .site-contacts__title-img {
         height: 100px;
         width: 60px;
         background: url("../img/icon-flag.svg") no-repeat 100%;
         display: inline-block;
-        margin-right: 60px;
+        margin-right: 40px;
     }
     .site-contacts__list {
         width: 320px;
@@ -156,18 +157,44 @@
     }
     .site-contacts__map {
         width: 530px;
-        background: url("../img/map-tablet.jpg") no-repeat 100%;
+        background: url("../img/map-desktop@1x.jpg") no-repeat 100%;
         height: 460px;
         order: 1;
     }
     .site-contacts__left {
-        height: 400px;
+        height: 360px;
+        margin-right: 20px;
     }
     .site-contacts__button {
         display: inline-block;
         width: 257px;
         height: 50px;
         border: 2px solid @text-color;
-        margin: auto auto auto 205px;
+        margin: auto auto 0 205px;
+    }
+}
+
+@media (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .site-contacts__map {
+        background: url("../img/map-mobile@2x.jpg") no-repeat 50%;
+        background-size: cover;
+    }
+}
+
+@media (min-device-width: 1150px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .site-contacts__map {
+        background: url("../img/map-desktop@2x.jpg") no-repeat 50%;
+        background-size: cover;
+    }
+}
+
+@media (min-device-width: 768px)
+and (max-device-width: 1149px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .site-contacts__map {
+        background: url("../img/map-tablet@2x.jpg") no-repeat 50%;
+        background-size: cover;
     }
 }

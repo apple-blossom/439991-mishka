@@ -12,48 +12,50 @@
 
 <body class="mishka">
     <header class="site-header">
-        <nav class="site-header__nav">
-            <section class="site-header__menu-button">
-                <button id="menu-button" class=" site-header__button">
-                </button>
-            </section>
-            <section class="site-logo">
-                <a class="" href="/index.html">
-                    <div class="site-header__logo"></div>
-                </a>
-            </section>
-            <ul class="site-header__nav-item-container-bottom site-header__nav-item-container-bottom--closed">
-                <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
-                <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
-            </ul>
-            <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
-                <li class="site-header__nav-item-img">
-                    <div class="site-header__menu-item-button">
-                        <a href="#">
-                            <span class="site-header__nav-item-search"> 
+        <div class="site-header__wrapper">
+            <nav class="site-header__nav">
+                <section class="site-header__menu-button">
+                    <button id="menu-button" class=" site-header__button">
+                    </button>
+                </section>
+                <section class="site-logo">
+                    <a class="" href="/index.html">
+                        <div class="site-header__logo"></div>
+                    </a>
+                </section>
+                <ul class="site-header__nav-item-container-bottom site-header__nav-item-container-bottom--closed">
+                    <li class="site-header__nav-item"><a href="/catalog.html">Каталог товаров</a></li>
+                    <li class="site-header__nav-item"><a href="/form.html">Вязание на заказ</a></li>
+                </ul>
+                <ul class="site-header__nav-item-container-top site-header__nav-item-container-top--closed">
+                    <li class="site-header__nav-item-img">
+                        <div class="site-header__menu-item-button">
+                            <a href="#">
+                                <span class="site-header__nav-item-search"> 
                         </span>
-                            <span class="site-header__nav-item-a"> Поиск по сайту</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="site-header__nav-item-img">
-                    <div class="site-header__menu-item-button">
-                        <a href="#">
-                            <span class="site-header__nav-item-cart"> 
+                                <span class="site-header__nav-item-a"> Поиск по сайту</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="site-header__nav-item-img">
+                        <div class="site-header__menu-item-button">
+                            <a href="#">
+                                <span class="site-header__nav-item-cart"> 
                         </span>
-                            <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
-                        </a>
-                    </div>
-                </li>
+                                <span class="site-header__nav-item-a"> Корзина: пока пуста </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="site-header__nav-delivery">
+                    <a href="#">Бесплатная доставка по России</a>
+                </div>
+            </nav>
+            <ul class="site-header__additional-links">
+                <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
+                <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
             </ul>
-            <div class="site-header__nav-delivery">
-                <a href="#">Бесплатная доставка по России</a>
-            </div>
-        </nav>
-        <ul class="site-header__additional-links">
-            <li class="site-header__additional-links-item"><a href="#">Новые поступления</a></li>
-            <li class="site-header__additional-links-item"><a href="#">Распродажа</a></li>
-        </ul>
+        </div>
     </header>
     <main class="catalog-page">
         <section class="buy-form">
@@ -85,12 +87,19 @@
         <div class="mishka__wrapper-responsive">
             <section class="page-title">
                 <h1 class="mishka__h1 page-title__text">Каталог товаров</h1>
+                <div class="mishka__line">
+        </div>
             </section>
         </div>
+        
         <section class="catalog-wrapper">
             <section class="catalog-good">
                 <div class="catalog-good__img">
-                    <img src="./img/photo-1-tablet.jpg" alt="Товар 1">
+                    <picture>
+                        <source srcset="./img/photo-1-desktop@1x.jpg 1x, ./img/photo-1-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                        <source srcset="./img/photo-1-tablet@1x.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./img/photo-1-mobile@1x.jpg" alt="Товар 1" srcset="./img/photo-1-mobile@2x.jpg 2x" width="100%" height="100%">
+                    </picture>
                 </div>
                 <div class="catalog-good__info">
                     <div class="catalog-good__info-title">
@@ -105,7 +114,11 @@
             </section>
             <section class="catalog-good">
                 <div class="catalog-good__img">
-                    <img src="./img/photo-2-tablet.jpg" alt="Товар 2">
+                    <picture>
+                        <source srcset="./img/photo-2-desktop@1x.jpg 1x, ./img/photo-2-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                        <source srcset="./img/photo-2-tablet@1x.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./img/photo-2-mobile@1x.jpg" alt="Товар 2" srcset="./img/photo-2-mobile@2x.jpg 2x" width="100%" height="100%">
+                    </picture>
                 </div>
                 <div class="catalog-good__info">
                     <div class="catalog-good__info-title">
@@ -120,7 +133,11 @@
             </section>
             <section class="catalog-good">
                 <div class="catalog-good__img">
-                    <img src="./img/photo-3-tablet.jpg" alt="Товар 3">
+                    <picture>
+                        <source srcset="./img/photo-3-desktop@1x.jpg 1x, ./img/photo-3-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                        <source srcset="./img/photo-3-tablet@1x.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./img/photo-3-mobile@1x.jpg" alt="Товар 3" srcset="./img/photo-3-mobile@2x.jpg 2x" width="100%" height="100%">
+                    </picture>
                 </div>
                 <div class="catalog-good__info">
                     <div class="catalog-good__info-title">
@@ -142,14 +159,13 @@
                     </div>
                 </div>
                 <div class="catalog-page__video-title">
-                    <span class="catalog-page__video-icon"> <img src="img/video.svg"   alt=""></span>
+                    <span class="catalog-page__video-icon"> <img src="img/icon-video.svg"   alt=""></span>
                     <div class="catalog-page__video-name">
                         <h3 class="mishka__h3 catalog-page__video-h">Процесс производства </h3></div>
                 </div>
                 <p class="catalog-page__video-text"> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-                <button id="buy" class="site-button catalog-button">
-                    <span class="catalog-button__text mishka__capitalize site-button__text">Сделать заказ
-                    </span>
+                <button id="buy" class="site-button catalog-button mishka__capitalize">
+                    Сделать заказ
                 </button>
             </section>
         </div>
