@@ -9,6 +9,17 @@
     .font();
 }
 
+.about-us__item-svg {
+    max-width: 60px;
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+.about-us__item-img {
+    display: flex;
+    align-items: flex-end;
+}
+
 @media @mobile {
     .about-us {
         width: 80%;
@@ -22,14 +33,9 @@
     }
     .about-us__item-img {
         text-align: left;
-        height: 30px;
         &::after {
             content: "";
             width: 160px;
-        }
-        img {
-            float: left;
-            .img();
         }
     }
     .about-us__item {
@@ -42,14 +48,24 @@
 @media @tablet,
 @desktop {
     .about-us {
-        width: 640px;
+        font-size: 19px;
+        line-height: 26px;
+        box-sizing: border-box;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    .about-us__wrapper {
+        width: 668px;
         margin: auto;
     }
     .about-us__item-list {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 420px;
+        height: 450px;
         margin-bottom: 60px;
     }
     .about-us__item,
@@ -62,15 +78,21 @@
     }
     .about-us__item-img {
         text-align: left;
-        height: 40px;
         vertical-align: middle;
         &::after {
             content: "";
             width: 160px;
         }
-        img {
-            float: left;
-            .img();
-        }
+    }
+}
+
+@media @desktop {
+    .about-us {
+        width: 1050px;
+        margin: auto;
+    }
+    .about-us__wrapper {
+        width: 720px;
+        margin-left: 175px;
     }
 }

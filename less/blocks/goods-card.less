@@ -6,7 +6,9 @@
 }
 
 .goods-card__text {
-    .text();
+    color: @text-color;
+    font-size: 17px;
+    line-height: 32px;
 }
 
 .goods-card__notation {
@@ -27,10 +29,13 @@
 }
 
 .goods-card__img {
-    background-color: #68DBCE;
+    background-color: #f1f1f1;
 }
 
 @media @mobile {
+    .goods-card {
+        margin: 70px auto;
+    }
     .goods-card__name {
         font-size: 25px;
         .clear-indent();
@@ -57,6 +62,7 @@
         .clear-indent();
         order: 1;
         margin-top: 20px;
+        height: 320px;
         img {
             width: 260px;
             height: 320px;
@@ -121,21 +127,15 @@
         margin-top: 40px;
         float: right;
         display: inline-block;
-        height: 400px;
-        img {
-            width: 300px;
-            height: 400px;
-        }
+        height: 335px;
     }
     .goods-card__price {
         text-align: center;
         font-size: 17px;
         width: 300px;
-        display: inline-block;
     }
     .goods-card__button {
         width: 290px;
-        display: inline-block;
         margin-top: 21px;
     }
     .goods-card__wrapper {
@@ -146,7 +146,7 @@
 @media @desktop {
     .goods-card {
         display: flex;
-        margin: 60px auto;
+        margin: 100px auto;
         color: @text-color;
         line-height: 24px;
         flex-direction: column;
@@ -171,8 +171,7 @@
     }
     .goods-card__left {
         margin-left: 175px;
-        width: 340px;
-        float: left;
+        width: 300px;
     }
     .goods-card__parameters {
         width: 300px;
@@ -193,12 +192,11 @@
         float: right;
         height: 555px;
         img {
-            height: 555px;
-            width: 530px;
+            width: 520px;
         }
     }
     .goods-card__price {
-        padding-top: 60px;
+        padding-top: 110px;
         margin: auto;
         margin-left: 175px;
         text-align: center;
@@ -206,14 +204,12 @@
         width: 290px;
         height: 40px;
         display: block;
-        float: left;
     }
     .goods-card__button {
         width: 290px;
         display: block;
-        margin-top: 25px;
+        margin-top: 28px;
         margin-left: 175px;
-        float: left;
     }
     .goods-card__wrapper {
         width: 1050px;

@@ -1,6 +1,6 @@
 .site-reviews__review {
     line-height: 30px;
-    font-size: 15px;
+    font-size: 17px;
     color: @text-color;
 }
 
@@ -18,8 +18,13 @@
     background: url("../img/icon-right-arrow.svg") no-repeat 50%;
 }
 
+.site-reviews__nav-arrow-l,
+.site-reviews__nav-arrow-r {
+    cursor: pointer;
+}
+
 .site-reviews__author-name {
-    font-size: 19px;
+    font-size: 17px;
     color: #000;
     font-weight: bold;
 }
@@ -34,6 +39,8 @@
     .site-reviews__wrapper {
         width: 320px;
         margin: auto;
+        padding-top: 60px;
+        font-size: 15px;
     }
     .site-reviews {
         width: 260px;
@@ -43,6 +50,7 @@
     }
     .site-reviews__title {
         .h(left);
+        .clear-indent();
     }
     .site-reviews__review {
         .clear-indent();
@@ -53,15 +61,17 @@
         font-style: normal;
         font-size: 17px;
         margin: 15px 5px auto auto;
+        display: block;
     }
     .site-reviews__author-name {
         width: 260px;
         margin: 0;
-        pagging-bottom: 20px;
         font-size: 17px;
+        display: block;
     }
     .site-reviews__link {
         .clear-indent();
+        padding-bottom: 10px;
     }
     .site-reviews__nav {
         width: 260px;
@@ -86,6 +96,13 @@
     }
 }
 
+@media @retina {
+    .site-reviews__wrapper {
+        background: #f9f9f9 url("../img/review@2x.jpg") no-repeat;
+        background-size: cover;
+    }
+}
+
 @media @tablet {
     .site-reviews__wrapper {
         width: 768px;
@@ -107,18 +124,15 @@
         margin-bottom: 60px;
     }
     .site-reviews {
-        margin-left: 205px;
-        width: 800px;
+        margin-left: 175px;
+        width: 880px;
     }
 }
 
 @media @desktop,
 @tablet {
-    .site-reviews__wrapper {
-        min-height: 460px;
-    }
     .site-reviews {
-        padding-top: 60px;
+        padding: 40px 0 60px 0;
     }
     .site-reviews__title {
         .h(left);
@@ -134,6 +148,7 @@
         display: inline-block;
         float: right;
         margin: 30px auto;
+        padding: 10px;
     }
     .site-reviews__author,
     .site-reviews__link {
@@ -169,5 +184,12 @@
         margin: 0;
         height: 100%;
         width: 50% - 1px;
+    }
+    .site-reviews__review {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     }
 }
