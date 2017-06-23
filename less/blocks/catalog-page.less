@@ -26,7 +26,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    img {
+    svg {
         margin: auto;
         align-self: center;
     }
@@ -118,7 +118,7 @@
 @media @desktop {
     .catalog-page__video-card {
         width: 100%;
-        margin: 25px auto;
+        margin: 25px auto 100px auto;
         border: @border;
     }
     .catalog-page__video-text {
@@ -139,8 +139,8 @@
     }
     .catalog-page__video {
         float: left;
-        height: 460px;
-        width: 668px;
+        height: 458px;
+        width: 660px;
         background: url("../img/video-desktop@1x.jpg") no-repeat 50%;
         background-size: cover;
         margin-right: 80px;
@@ -153,25 +153,21 @@
     }
 }
 
-@media (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
     .catalog-page__video {
         background: url("../img/video-mobile@2x.jpg") no-repeat 50%;
         background-size: cover;
     }
 }
 
-@media (min-device-width: 1150px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-device-width: 1150px) and (-webkit-min-device-pixel-ratio: 2) {
     .catalog-page__video {
         background: url("../img/video-desktop@2x.jpg") no-repeat 50%;
         background-size: cover;
     }
 }
 
-@media (min-device-width: 768px)
-and (max-device-width: 1149px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-device-width: 768px) and (max-device-width: 1149px) and (-webkit-min-device-pixel-ratio: 2) {
     .catalog-page__video {
         background: url("../img/video-tablet@2x.jpg") no-repeat 50%;
         background-size: cover;

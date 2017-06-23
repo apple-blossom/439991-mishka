@@ -4,6 +4,16 @@
     .clear-indent();
 }
 
+.mishka__svg-list {
+    display: none;
+}
+
+.mishka__svg {
+    &:hover {
+        fill: @cyan-light;
+    }
+}
+
 .mishka__h1,
 .mishka__h2,
 .mishka__h3,
@@ -46,7 +56,6 @@
 
 .mishka__capitalize {
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .mishka__email {
@@ -89,11 +98,9 @@
         margin: auto;
         display: block;
     }
-    
     .mishka__line {
         display: none;
     }
-
 }
 
 @media @tablet {
