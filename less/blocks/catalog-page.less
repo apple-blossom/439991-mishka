@@ -12,6 +12,15 @@
     }
 }
 
+.catalog-page__video-card {
+    &:hover {
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
 .catalog-page__video-text {
     .text();
 }
@@ -150,6 +159,23 @@
         width: 230px;
         margin: 50px auto;
         clear: both;
+    }
+}
+
+
+@media @desktop, @mobile {
+    .catalog-page__video-play-svg {
+      cursor: pointer;
+
+          &:hover {
+            width: 120px;
+            height: 100px;
+        }
+          &:active {
+            width: 100px;
+            height: 80px;
+            opacity: 0.5;
+        }
     }
 }
 

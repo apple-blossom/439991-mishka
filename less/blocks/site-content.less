@@ -18,22 +18,31 @@
 .site-content__categories-item {
     background-color: @cyan-light;
     width: 50%;
-    height: auto;
+    height: 120px;
     margin: 0;
-    a {
-        text-decoration: none;
-        color: #FFF;
-        outline: none;
-        font-weight: bold;
-        font-size: 17px;
-        line-height: 24px;
-        .font(#fff);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        height: 120px;
-        width: 100% - 10px;
+    padding-top: 5px;
+    &:hover {
+        padding-top: 0px;
+        height: 125px;
+    }
+}
+
+.site-content__categories-item-a {
+    text-decoration: none;
+    color: #FFF;
+    outline: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    .font(#fff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 120px;
+    width: 100% - 10px;
+    &:active {
+        opacity: 0.5;
     }
 }
 

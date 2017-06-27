@@ -1,8 +1,23 @@
 .catalog-good {
     border: @border;
+    &:hover {
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    }
     p {
         .text();
     }
+    a {
+        text-decoration: none;
+        outline: none;
+        color: #000;
+    }
+}
+
+.catalog-good__descr {
+    margin: 15px 0 0 0;
 }
 
 .catalog-good__buy-price {
@@ -13,6 +28,7 @@
 .catalog-good__buy-cart {
     float: right;
     height: 20px;
+    cursor: pointer;
 }
 
 .catalog-good__buy {
@@ -96,6 +112,9 @@
         &::before {
             width: 270px;
         }
+    }
+    .catalog-good__name {
+        margin: 20px 0 0 0;
     }
 }
 

@@ -9,8 +9,38 @@
 }
 
 .mishka__svg {
+    fill: #666;
+
     &:hover {
         fill: @cyan-light;
+    }
+
+    &:active {
+        fill: @cyan-light;
+        opacity: 0.5;
+    }
+}
+
+.mishka__svg-black {
+    fill: #000;
+
+    &:hover {
+        fill: @cyan-light;
+    }
+
+    &:active {
+        fill: @cyan-light;
+        opacity: 0.5;
+    }
+}
+
+.mishka__svg-grey {
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }
 
@@ -63,6 +93,15 @@
     color: @text-color;
     outline: none;
     border-bottom: 1px solid @cyan-light;
+    &:hover {
+        color: @cyan-light;
+    }
+
+    &:active {
+        color: @cyan-light;
+        opacity: 0.5;
+        border-bottom: 0;
+    }
 }
 
 .mishka__line {
@@ -76,7 +115,7 @@
         left: 0;
         right: 0;
         height: 34px;
-        background: url(/img/bg-zigzag-fill.svg) repeat-x center;
+        background: url("../img/bg-zigzag-fill.svg") repeat-x center;
     }
 }
 
