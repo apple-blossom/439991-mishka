@@ -77,7 +77,7 @@
     .site-contacts__title {
         height: 100px;
         display: flex;
-        margin: 30px auto;
+        margin: 40px auto;
     }
     .site-contacts__title-h2 {
         width: 600px;
@@ -91,7 +91,6 @@
     }
     .site-contacts__list {
         margin-bottom: 40px;
-        justify-content: space-between;
     }
     .site-contacts__name {
         width: 60px;
@@ -106,12 +105,15 @@
     .site-contacts__button {
         width: 230px;
     }
+    .site-contacts__list-item:last-of-type {
+        padding-left: 45px;
+    }
 }
 
 @media @desktop {
     .site-contacts {
         width: 1050px;
-        margin: 60px auto 100px auto;
+        margin: 100px auto 100px auto;
         height: 460px;
         display: flex;
         flex-direction: column;
@@ -120,7 +122,7 @@
     .site-contacts__title {
         height: 100px;
         display: flex;
-        margin: 50px 30px 0 80px;
+        margin: 70px 30px 0 80px;
         width: 380px;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -140,7 +142,7 @@
     .site-contacts__list {
         width: 320px;
         flex-direction: column;
-        margin-left: 205px;
+        margin-left: 180px;
         margin-bottom: 40px;
         justify-content: space-between;
     }
@@ -168,7 +170,7 @@
         width: 257px;
         height: 50px;
         border: 2px solid @text-color;
-        margin: auto auto 0 205px;
+        margin: auto auto 0 180px;
     }
 }
 
@@ -179,7 +181,9 @@
     }
 }
 
-@media (min-device-width: 1150px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-device-width: 1150px) and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
     .site-contacts__map {
         background: url("../img/map-desktop@2x.jpg") no-repeat 50%;
         background-size: cover;

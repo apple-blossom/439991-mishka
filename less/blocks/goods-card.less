@@ -146,7 +146,7 @@
 @media @desktop {
     .goods-card {
         display: flex;
-        margin: 100px auto;
+        margin: 80px auto;
         color: @text-color;
         line-height: 24px;
         flex-direction: column;
@@ -179,13 +179,15 @@
     .goods-card__text {
         width: 300px;
         display: inline-block;
-        .clear-indent();
-        padding-bottom: 35px;
+        margin: 0;
+        padding-bottom: 40px;
+        padding-top: 10px;
     }
     .goods-card__parameters-td {
         height: 40px;
         border-bottom: 1px solid #f1f1f1;
         border-collapse: collapse;
+        padding: 0;
     }
     .goods-card__img {
         margin-top: -135px;
@@ -196,11 +198,11 @@
         }
     }
     .goods-card__price {
-        padding-top: 110px;
+        padding-top: 100px;
         margin: auto;
         margin-left: 175px;
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
         width: 290px;
         height: 40px;
         display: block;

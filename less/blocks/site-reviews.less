@@ -31,7 +31,6 @@
 
 .site-reviews__review-text {
     white-space: pre-line;
-    display: inline;
     text-align: left;
 }
 
@@ -114,6 +113,9 @@
         margin: auto;
         width: 668px;
     }
+    .site-reviews__author {
+        padding-top: 40px;
+    }
 }
 
 @media @desktop {
@@ -126,6 +128,13 @@
     .site-reviews {
         margin-left: 175px;
         width: 880px;
+    }
+
+    .site-reviews__review-text {
+        display: block;
+    }
+    .site-reviews__author {
+        padding-top: 20px;
     }
 }
 
@@ -159,7 +168,6 @@
     }
     .site-reviews__author {
         float: left;
-        padding-top: 40px;
     }
     .site-reviews__author-name {
         .clear-indent();
@@ -175,7 +183,7 @@
         display: inline-table;
         border: none;
         float: right;
-        padding-top: 40px;
+        padding-top: 20px;
     }
     .site-reviews__nav-arrow-l,
     .site-reviews__nav-arrow-r {

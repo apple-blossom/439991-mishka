@@ -36,6 +36,8 @@
   },
   "dependencies": {
     "del": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "natives": "^1.1.0",
     "normalize.less": "^1.0.0"
   },
   "main": "gulpfile.js",
