@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Куртанидзе](https://up.htmlacademy.ru/adaptive/11/user/439991).
+* Студент: [Екатерина](https://up.htmlacademy.ru/adaptive/11/user/439991).
 * Наставник: [Дмитрий](https://htmlacademy.ru/profile/shalfey41).
 
 ---
